@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Xinhao Yan</title>
 
@@ -12,59 +13,72 @@
 
     <!-- Custom Styles -->
     <style>
-          body {
+        body {
             font-family: 'sans-serif';
             font-size: 16px;
             background-color: #FFFFFF;
             color: #4F6071;
-          }
-          #header {
+        }
+
+        #header {
             background-color: #f4f4f4;
             /*background-color: #FFFFFF;*/
             display: flex;
             align-items: flex-end;
-            padding-top:60px;
-            padding-bottom:60px;
-          }
-          #footer {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        #footer {
             background-color: #FFFFFF;
-            padding:60px;
-          }
-          #portrait {
+            padding: 60px;
+        }
+
+        #portrait {
             border: 3px solid white;
-          }
-          #header-text {
+        }
+
+        #header-text {
             margin-top: 60px;
             margin-left: 220px;
-          }
-          #header-text-name {
+        }
+
+        #header-text-name {
             font-size: 40px;
-          }
-          #header-text-email {
+        }
+
+        #header-text-email {
             font-size: 20px;
             font-style: italic;
-          }
-          .header-text-desc {
+        }
+
+        .header-text-desc {
             font-size: 20px;
-          }
-          .vspace-top {
+        }
+
+        .vspace-top {
             margin-top: 30px;
-          }
-          .vspace-top-news {
-              margin-top: 15px;
-          }
-          .paper-image {
+        }
+
+        .vspace-top-news {
+            margin-top: 15px;
+        }
+
+        .paper-image {
             width: 150px;
-          }
-          .news-date {
-              font-weight: bold;
-          }
-          .paper-title {
+        }
+
+        .news-date {
             font-weight: bold;
-          }
-          .paper-authors {
+        }
+
+        .paper-title {
+            font-weight: bold;
+        }
+
+        .paper-authors {
             font-style: italic;
-          }
+        }
     </style>
 </head>
 
@@ -73,21 +87,21 @@
         <div class='container'>
             <div class='row'>
                 <div class="col-sm-3 offset-sm-1">
-                    <img src='imgs/portrait.jpg' class='img-fluid'>
+                    <img src='imgs/portrait.JPG' class='img-fluid'>
                 </div>
 
                 <div class="col">
-                  <div id='header-text-name'>
-                      Xinhao Yan (严新豪)
-                  </div>
-                  <div id='header-text-email'>
-                    chenap (at) shanghaitech (dot) edu (dot) cn
-                  </div>
-                  <div>
-                    <a href="https://github.com/apchenstu">[GitHub]</a>
-                    <a href="https://scholar.google.com/citations?user=fuR1FBwAAAAJ&hl=en">[Google Scholar]</a>
-                    <a href="docs/Anpei_CV.pdf">[Download CV]</a>
-                  </div>
+                    <div id='header-text-name'>
+                        Xinhao Yan (严新豪)
+                    </div>
+                    <div id='header-text-email'>
+                        yanxh@shanghaitech.edu.cn
+                    </div>
+                    <div>
+                        <a href="https://github.com/yanxinhao">[GitHub]</a>
+                        <a href="https://scholar.google.com/citations?user=rgfQe54AAAAJ&hl=en">[Google Scholar]</a>
+                        <a href="docs/yanxh_resume.pdf">[Download CV]</a>
+                    </div>
 
                 </div>
             </div>
@@ -100,13 +114,18 @@
             <div class='col offset-sm-1'>
                 <h1>Bio</h1>
                 <p>
-                    I obtained my Ph.D. at ShanghaiTech University <a href="http://vic.shanghaitech.edu.cn/">Visual Intelligent Center (VIC)</a>, working with
-                    Prof. <a href="http://www.yu-jingyi.com/cv/">Jingyi Yu</a>. Before that, I received my Bachelor degree in 2016 from Xidian University.
+                    I am a Ph.D. student at ShanghaiTech University, jointly supervised by Prof. <a
+                        href="https://datascience.hku.hk/people/shenghua-gao/">Shenghua Gao</a> (The University of Hong
+                    Kong) and Prof. <a href="https://sist.shanghaitech.edu.cn/xulan1_en/main.htm">Lan Xu</a>
+                    (ShanghaiTech University).
                     <br><br>
-                    My research interests lie at the intersection of computer graphics and vision,
-                    including geometric modeling/reconstruction, realistic appearance rendering, and controllable image synthesis.
-                    I have a great passion on new things and ideas, my goal is to create magic and happiness. Outside my research,
-                    I love photography, badminton, and movie appreciation.
+                    My research interests lie at the intersection of computer graphics and vision, with a focus on 3D
+                    representation
+                    learning and generative models. Recently, I have been exploring 3D scene-level generative models
+                    that can benefit
+                    spatial intelligence and embodied AI.
+
+                    I am passionate about new ideas and collaborations.
                     <br>
 
                 </p>
@@ -119,28 +138,79 @@
 
                 <div class='row vspace-top'>
                     <div class="col-sm-3">
-                        <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/tensorf.mp4" type="video/mp4">
-                        </video>
+                        <img src='imgs/x-part.jpg' class='img-fluid'>
                     </div>
 
                     <div class="col">
                         <div class='paper-title'>
-                            TensoRF: Tensorial Radiance Fields
+                            X-Part: high fidelity and structure coherent shape decomposition
                         </div>
                         <div class='paper-desc'>
-			                 ECCV 2022 (poster, final scores: 1, 1, 1)
+                            Arxiv
                         </div>
                         <div class='paper-authors'>
-                             <u>Anpei Chen*</u>, Zexiang Xu*, Andreas Geiger, Jingyi Yu, Hao Su
+                            <u>Xinhao Yan*</u>, Jiachen Xu*, Yang Li, Changfeng Ma, Yunhan Yang, Chunshi Wang, Zibo
+                            Zhao,
+                            Zeqiang Lai, Yunfei Zhao, Zhuo Chen, Chunchao Guo
                         </div>
                         <div>
-                            <a href="https://apchenstu.github.io/TensoRF">[Project page]</a>
-                            <a href="https://arxiv.org/abs/2203.09517">[Paper]</a>
-                            <a href="https://github.com/apchenstu/TensoRF">[Code]</a>
+                            <a href="https://yanxinhao.github.io/X-Part">[Project page]</a>
+                            <a href="https://arxiv.org/abs/2509.08643">[Paper]</a>
+                            <!-- <a href="https://github.com/apchenstu/TensoRF">[Code]</a>
                             <a href="TensoRF/review.pdf">[Review]</a>
                             <a href="TensoRF/rebuttal.pdf">[Rebuttal]</a>
-                            <a href="TensoRF/meta-review.pdf">[Meta-review]</a>
+                            <a href="TensoRF/meta-review.pdf">[Meta-review]</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row vspace-top'>
+                    <div class="col-sm-3">
+                        <img src='imgs/p3sam.jpg' class='img-fluid'>
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            P3-SAM: Native 3D Part Segmentation
+                        </div>
+                        <div class='paper-desc'>
+                            Arxiv
+                        </div>
+                        <div class='paper-authors'>
+                            Changfeng Ma, Yang Li, <u>Xinhao Yan</u>, Jiachen Xu, Yunhan Yang, Chunshi Wang, Zibo Zhao,
+                            Zeqiang Lai, Yunfei Zhao, Zhuo Chen, Chunchao Guo
+                        </div>
+                        <div>
+                            <a href="https://yanxinhao.github.io/P3SAM">[Project page]</a>
+                            <a href="https://arxiv.org/abs/2509.06784">[Paper]</a>
+                            <!-- <a href="https://github.com/apchenstu/TensoRF">[Code]</a>
+                                            <a href="TensoRF/review.pdf">[Review]</a>
+                                            <a href="TensoRF/rebuttal.pdf">[Rebuttal]</a>
+                                            <a href="TensoRF/meta-review.pdf">[Meta-review]</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row vspace-top'>
+                    <div class="col-sm-3">
+                        <img src='imgs/cast.png' class='img-fluid'>
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            CAST: Component-Aligned 3D Scene Reconstruction from an RGB Image
+                        </div>
+                        <div class='paper-desc'>
+                            SIGGRAPH 2025 — <span style="color:#c62828; font-weight:700;">Best Paper Award</span>
+                        </div>
+                        <div class='paper-authors'>
+                            Kaixin Yao*, Longwen Zhang*, <u>Xinhao Yan</u>, Yan Zeng, Qixuan Zhang, Wei Yang, Lan Xu,
+                            Jiayuan Gu, Jingyi Yu
+                        </div>
+                        <div>
+                            <a href="https://sites.google.com/view/cast4">[Project page]</a>
+                            <a href="https://arxiv.org/abs/2502.12894">[Paper]</a>
+                            <a href="https://sites.google.com/view/cast4">[Code]</a>
                         </div>
                     </div>
                 </div>
@@ -155,10 +225,10 @@
                             PREF: Phasorial Embedding Fields for Compact Neural Representation
                         </div>
                         <div class='paper-desc'>
-                             Arxiv
+                            Arxiv
                         </div>
                         <div class='paper-authors'>
-                             Binbin Huang, Xinhao Yan, <u>Anpei Chen</u>, Shenghua Gao, Jingyi Yu
+                            Binbin Huang, <u>Xinhao Yan</u>, Anpei Chen, Shenghua Gao, Jingyi Yu
                         </div>
                         <div>
                             <a href="https://arxiv.org/abs/2205.13524">[Paper]</a>
@@ -169,254 +239,23 @@
 
                 <div class='row vspace-top'>
                     <div class="col-sm-3">
-                        <img src='imgs/AAAI2022.png' class='img-fluid'>
+                        <img src='imgs/teaser_dual_nerf.png' class='img-fluid'>
                     </div>
 
                     <div class="col">
                         <div class='paper-title'>
-                            Anisotropic Fourier Features for Image-Based Rendering and Relighting
+                            Dual-Space NeRF: Learning Animatable Avatars and Scene Lighting in Separate Spaces
                         </div>
                         <div class='paper-desc'>
-			                 AAAI 2022 (Oral)
+                            3DV 2022
                         </div>
                         <div class='paper-authors'>
-                            Huangjie Yu, <u>Anpei Chen</u>, Xin Chen, Lan Xu, Ziyu Shao, Jingyi Yu
+                            Yihao Zhi*, Shenhan Qian*, <u>Xinhao Yan*</u>, Shenghua Gao
                         </div>
                         <div>
-                            <a href="https://aaai-2022.virtualchair.net/poster_aaai2220">[Project page]</a>
+                            <a href="https://arxiv.org/pdf/2208.14851">[Paper]</a>
+                            <a href="https://github.com/zyhbili/Dual-Space-NeRF">[Code]</a>
                         </div>
-                    </div>
-                </div>
-
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/mvsnerf2.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            MVSNeRF: Fast Generalizable Radiance Field Reconstruction from Multi-View Stereo
-                        </div>
-                        <div class='paper-desc'>
-			                 ICCV 2021
-                        </div>
-                        <div class='paper-authors'>
-                            <u>Anpei Chen*</u>, Zexiang Xu*, Fuqiang Zhao, Xiaoshuai Zhang, Fanbo Xiang, Jingyi Yu, Hao Su
-                        </div>
-                        <div>
-                            <a href="https://apchenstu.github.io/mvsnerf">[Project page]</a>
-                            <a href="https://arxiv.org/abs/2103.15595">[Paper]</a>
-                            <a href="https://github.com/apchenstu/mvsnerf">[Code]</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <img src='imgs/GNeRF.png' class='img-fluid'>
-                    </div>
-
-                    <div class="col">
-                        <div class='paper-title'>
-                            GNeRF: GAN-based Neural Radiance Field without Posed Camera
-                        </div>
-                        <div class='paper-desc'>
-                       ICCV 2021 (Oral)
-                        </div>
-                        <div class='paper-authors'>
-                            Quan Meng, <u>Anpei Chen</u>, Haimin Luo, Minye Wu, Hao Su, Lan Xu, Xuming He, Jingyi Yu
-                        </div>
-                        <div>
-                            <a href="https://arxiv.org/abs/2103.15606">[Paper]</a>
-                            <a href="https://github.com/MQ66/gnerf">[Code]</a>
-                            <a href="https://www.youtube.com/watch?v=pXnY9uSmEsw">[Video]</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                        <source src="imgs/ConvNeRF.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    
-                    <div class="col">
-                        <div class='paper-title'>
-                            ConvNeRF: Convolutional Neural Opacity Radiance Fields
-                        </div>
-                        <div class='paper-desc'>
-                       ICCP 2021
-                        </div>
-                        <div class='paper-authors'>
-                            Haimin Luo, <u>Anpei Chen</u>, Qixuan Zhang, Bai Pang, Minye Wu, Lan Xu, Jingyi Yu
-                        </div>
-                        <div>
-                            <a href="https://arxiv.org/abs/2104.01772">[Paper]</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                        <source src="imgs/sofgan.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                      <div class='paper-title'>
-                          SofGAN: A Portrait Image Generator with Dynamic Styling
-                      </div>
-                      <div class='paper-desc'>
-                          TOG
-                      </div>
-                      <div class='paper-authors'>
-                          <u>Anpei Chen*</u>, Ruiyang Liu*, Ling Xie, Zhang Chen, Hao Su, Jingyi Yu
-                      </div>
-                      <div>
-                            <a href="https://apchenstu.github.io/sofgan">[Project page]</a>
-                            <a href="https://arxiv.org/abs/2007.03780">[Paper]</a>
-                            <a href="https://github.com/apchenstu/sofgan">[Code]</a>
-                      </div>
-                    </div>
-                </div>
-
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/relighting.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col">
-                      <div class='paper-title'>
-                          A neural rendering framework for free-viewpoint relighting
-                      </div>
-                      <div class='paper-desc'>
-                          CVPR 2020
-                      </div>
-                      <div class='paper-authors'>
-                          Zhang Chen, <u>Anpei Chen</u>, Guli Zhang, Chengyuan Wang, Yu Ji, Kiriakos N Kutulakos, Jingyi Yu
-                      </div>
-                      <div>
-                            <a href="https://arxiv.org/abs/1911.11530">[Paper]</a>
-                            <a href="https://github.com/LansburyCH/relightable-nr">[Code]</a>
-                      </div>
-                    </div>
-                </div>
-
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <img src='imgs/facial_detail.png' class='img-fluid'>
-                    </div>
-
-                    <div class="col">
-                      <div class='paper-title'>
-                          Photo-Realistic Facial Details Synthesis from Single Image
-                      </div>
-                      <div class='paper-desc'>
-                          ICCV 2019 (Oral)
-                      </div>
-                      <div class='paper-authors'>
-                          <u>Anpei Chen</u>, Zhang Chen, Guli Zhang, Ziheng Zhang, Kenny Mitchell, Jingyi Yu
-                      </div>
-                      <div>
-                            <a href="https://apchenstu.github.io/facial_details/">[Project page]</a>
-                            <a href="https://arxiv.org/abs/1903.10873">[Paper]</a>
-                            <a href="https://github.com/apchenstu/Facial_Details_Synthesis">[Code]</a>
-                      </div>
-                    </div>
-                </div>
-
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/3d_face.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-
-                    <div class="col">
-                      <div class='paper-title'>
-                          Sparse photometric 3d face reconstruction guided by morphable models
-                      </div>
-                      <div class='paper-desc'>
-                          CVPR 2019
-                      </div>
-                      <div class='paper-authors'>
-                          Xuan Cao, Zhang Chen, <u>Anpei Chen</u>, Xin Chen, Shiying Li, Jingyi Yu
-                      </div>
-                      <div>
-                            <a href="https://arxiv.org/abs/1711.10870">[Paper]</a>
-                      </div>
-                    </div>
-                </div>
-
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <img src='imgs/amodal.png' class='img-fluid'>
-                    </div>
-
-                    <div class="col">
-                      <div class='paper-title'>
-                          Learning semantics-aware distance map with semantics layering network for amodal instance segmentation
-                      </div>
-                      <div class='paper-desc'>
-                          ACM MM 2019
-                      </div>
-                      <div class='paper-authors'>
-                          Ziheng Zhang*, <u>Anpei Chen*</u>, Ling Xie, Jingyi Yu, Shenghua Gao
-                      </div>
-                      <div>
-                            <a href="https://arxiv.org/abs/1905.12898">[Paper]</a>
-                            <a href="https://github.com/apchenstu/SLN-Amodal">[Code]</a>
-                      </div>
-                    </div>
-                </div>
-
-               <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <img src='imgs/refocusable.jpg' class='img-fluid'>
-                    </div>
-
-                    <div class="col">
-                      <div class='paper-title'>
-                          Refocusable Gigapixel Panoramas for Immersive VR Experiences
-                      </div>
-                      <div class='paper-desc'>
-                          TVCG 2019
-                      </div>
-                      <div class='paper-authors'>
-                          Wentao Lyu, Peng Ding, Yingliang Zhang, <u>Anpei Chen</u>, Minye Wu, Shu Yin, Jingyi Yu
-                      </div>
-                      <div>
-                            <a href="https://ieeexplore.ieee.org/iel7/2945/4359476/08827949.pdf">[Paper]</a>
-                      </div>
-                    </div>
-                </div>
-
-               <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <img src='imgs/dslf.png' class='img-fluid'>
-                    </div>
-
-                    <div class="col">
-                      <div class='paper-title'>
-                          Deep surface light fields
-                      </div>
-                      <div class='paper-desc'>
-                          I3D 2018
-                      </div>
-                      <div class='paper-authors'>
-                          <u>Anpei Chen</u>, Minye Wu, Yingliang Zhang, Nianyi Li, Jie Lu, Shenghua Gao, Jingyi Yu
-                      </div>
-                      <div>
-                            <a href="https://apchenstu.github.io/dslf">[Project page]</a>
-                            <a href="https://arxiv.org/abs/1810.06514">[Paper]</a>
-                      </div>
                     </div>
                 </div>
             </div>
@@ -425,12 +264,12 @@
 
 
     <div id='footer' class='vspace-top'>
-    <div>
+        <div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
