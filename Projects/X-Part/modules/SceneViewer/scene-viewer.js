@@ -101,33 +101,33 @@ export class ViewerModule {
   }
 
   setupLighting(scene) {
-    // Ambient light for overall illumination
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
+    // Ambient light for overall illumination - increased for lighter overall look
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
     scene.add(ambientLight);
 
-    // Main directional light (key light) - positioned far away to avoid internal lighting
-    const keyLight = new THREE.DirectionalLight(0xffffff, 1.2);
+    // Main directional light (key light) - increased intensity for better detail visibility
+    const keyLight = new THREE.DirectionalLight(0xffffff, 1.5);
     keyLight.position.set(8, 12, 8);
     keyLight.target.position.set(0, 0, 0);
     scene.add(keyLight);
     scene.add(keyLight.target);
 
-    // Fill light for softer shadows - positioned opposite to key light
-    const fillLight = new THREE.DirectionalLight(0xffffff, 0.5);
+    // Fill light for softer shadows - increased for lighter overall appearance
+    const fillLight = new THREE.DirectionalLight(0xffffff, 0.8);
     fillLight.position.set(-6, 8, -6);
     fillLight.target.position.set(0, 0, 0);
     scene.add(fillLight);
     scene.add(fillLight.target);
 
-    // Rim light for edge definition - positioned behind the object
-    const rimLight = new THREE.DirectionalLight(0xffffff, 0.3);
+    // Rim light for edge definition - increased for better edge detail
+    const rimLight = new THREE.DirectionalLight(0xffffff, 0.5);
     rimLight.position.set(0, 0, -10);
     rimLight.target.position.set(0, 0, 0);
     scene.add(rimLight);
     scene.add(rimLight.target);
 
-    // Hemisphere light for natural sky/ground lighting
-    const hemisphereLight = new THREE.HemisphereLight(0x87ceeb, 0x8b7355, 0.3);
+    // Hemisphere light for natural sky/ground lighting - increased intensity
+    const hemisphereLight = new THREE.HemisphereLight(0x87ceeb, 0x8b7355, 0.5);
     scene.add(hemisphereLight);
   }
 
@@ -159,11 +159,13 @@ export class ViewerModule {
             if (child.isMesh) {
               child.visible = true;
 
-              // Create more natural material properties
+              // Create matte material properties without highlights
               if (child.material) {
-                child.material.color.set(0xf5f5f5); // Soft off-white
-                child.material.metalness = 0.1; // Slight metallic property
-                child.material.roughness = 0.7; // Slightly rough surface
+                child.material.color.set(0xf8f8f8); // Lighter off-white for brighter appearance
+                child.material.metalness = 0.0; // No metallic property to eliminate highlights
+                child.material.roughness = 0.5; // Maximum roughness for completely matte surface
+                child.material.normalScale = new THREE.Vector2(1., 1.); // Enhance normal mapping if available
+                child.material.envMapIntensity = 0.2; // No environment reflection to eliminate highlights
                 child.material.needsUpdate = true;
               }
             }
