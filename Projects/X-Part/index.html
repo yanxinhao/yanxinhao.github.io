@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
   <link rel="stylesheet" href="./static/css/index.css" />
-  <link rel="icon" href="./static/images/favicon.png" />
+  <link rel="icon" href="./static/images/hunyuan-logo.png" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -59,7 +59,7 @@
           <a class="navbar-link"> More Research </a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="https://yhyang-myron.github.io/SAMPart3D-website/" target="_blank">
-              P3SAM
+              P3-SAM
             </a>
           </div>
         </div>
@@ -77,13 +77,16 @@
             </h1>
             <div class="is-size-5 publication-authors">
               <a href="https://yanxinhao.github.io/" target="_blank">Xinhao Yan</a><sup>1,2,*</sup>,
-              Jiachen Xu<sup>2,*</sup>,
-              Yang Li<sup>2,†</sup>,
-              Changfeng Ma<sup>3,2</sup>,<br />
-              Yunhan Yang<sup>4,2</sup>,
-              Chunshi Wang<sup>5,2</sup>,
+              <a href="https://scholar.google.com/citations?user=GcznIXIAAAAJ&hl=en" target="_blank">Jiachen
+                Xu</a><sup>2,*</sup>,
+              <a href="https://yang-l1.github.io/" target="_blank">Yang Li</a><sup>2,†</sup>,
+              <a href="https://www.njumeta.com/macf/" target="_blank">Changfeng Ma</a><sup>3,2</sup>,<br />
+              <a href="https://yhyang-myron.github.io/" target="_blank">Yunhan Yang</a><sup>4,2</sup>,
+              <a href="https://scholar.google.com/citations?user=LNxEN9cAAAAJ&hl=zh-CN" target="_blank">Chunshi
+                Wang</a><sup>5,2</sup>,
               Zibo Zhao<sup>2</sup>,
-              Zeqiang Lai<sup>6,2</sup>
+              <a href="https://maikouuu.github.io/" target="_blank">Zibo Zhao</a><sup>2</sup>,
+              <a href="https://zeqiang-lai.github.io/" target="_blank">Zeqiang Lai</a><sup>6,2</sup>
               Yunfei Zhao<sup>2</sup>
               Zhuo Chen<sup>2</sup>
               Chunchao Guo<sup>2,✉</sup>
@@ -253,6 +256,24 @@
 
   <section class="section">
     <div class="container is-max-desktop">
+      <div class="has-text-centered">
+        <h2 class="title is-3">Method Overview</h2>
+      </div>
+      <br />
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <br />
+          <img src="./assets/images/pipeline.jpg" class="" alt="" />
+          Given input point cloud, per-point feature and part bounding boxes are extracted from P3SAM. Global and part
+          conditions are obtained by stacking geometry token with interpolated semantic features. They are injected to
+          multi-part diffusion process to guide shape decomposition.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
           <div class="has-text-centered">
@@ -289,24 +310,6 @@
       </div>
     </div>
   </section> -->
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="has-text-centered">
-        <h2 class="title is-3">Method Overview</h2>
-      </div>
-      <br />
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <br />
-          <img src="./assets/images/pipeline.jpg" class="" alt="" />
-          Given input point cloud, per-point feature and part bounding boxes are extracted from P3SAM. Global and part
-          conditions are obtained by stacking geometry token with interpolated semantic features. They are injected to
-          multi-part diffusion process to guide shape decomposition.
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
@@ -348,7 +351,7 @@
                 target="_blank">X-Part-Page</a>. The
               website template is borrowed from
               <a href="https://nerfies.github.io/" target="_blank">Nerfies</a> and
-              <a href="https://huanngzh.github.io/MIDI-Page/" target="_blank">MIDI-Page</a>.
+              <a href="https://vast-ai-research.github.io/HoloPart/" target="_blank">Holopart-Page</a>.
             </p>
           </div>
         </div>
