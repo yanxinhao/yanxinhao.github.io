@@ -19,6 +19,9 @@ export class ViewerModule {
     this.originalControls = null;
     this.explodedControls = null;
     this.explodeAmount = 0;
+    this.autoRotate = true;
+    this.rotationSpeed = 0.01;
+    this.rotationAngle = 0;
   }
 
   init() {
@@ -56,6 +59,7 @@ export class ViewerModule {
     );
     this.originalControls.enableDamping = true;
     this.originalControls.dampingFactor = 0.25;
+    this.originalControls.autoRotate = false;
 
     // Create exploded scene (right side)
     this.explodedScene = new THREE.Scene();
@@ -78,6 +82,7 @@ export class ViewerModule {
     );
     this.explodedControls.enableDamping = true;
     this.explodedControls.dampingFactor = 0.25;
+    this.explodedControls.autoRotate = false;
 
     // Add lighting to both scenes
     this.setupLighting(this.originalScene);
@@ -148,6 +153,10 @@ export class ViewerModule {
         // Clone the model for both scenes
         this.originalModel = gltf.scene.clone();
         this.explodedModel = gltf.scene.clone();
+
+        // Store the base name for tracking
+        this.originalModel.userData.baseName = baseName;
+        this.explodedModel.userData.baseName = baseName;
 
         // Add to respective scenes
         this.originalScene.add(this.originalModel);
@@ -292,6 +301,36 @@ export class ViewerModule {
     controlsContainer.style.gap = "20px";
     controlsContainer.style.margin = "10px";
 
+    // Auto-rotate button
+    const autoRotateButton = document.createElement("button");
+    autoRotateButton.textContent = this.autoRotate ? "Stop Rotate" : "Auto Rotate";
+    autoRotateButton.style.padding = "10px 20px";
+    autoRotateButton.style.fontSize = "16px";
+    autoRotateButton.style.fontWeight = "bold";
+    autoRotateButton.style.backgroundColor = this.autoRotate ? "#28a745" : "#6c757d";
+    autoRotateButton.style.color = "white";
+    autoRotateButton.style.border = "none";
+    autoRotateButton.style.borderRadius = "5px";
+    autoRotateButton.style.cursor = "pointer";
+    autoRotateButton.style.transition = "background-color 0.3s";
+    autoRotateButton.style.width = "140px";
+    autoRotateButton.style.minWidth = "140px";
+    autoRotateButton.style.height = "40px";
+    autoRotateButton.style.textAlign = "center";
+
+    autoRotateButton.onmouseover = () => {
+      autoRotateButton.style.backgroundColor = this.autoRotate ? "#218838" : "#5a6268";
+    };
+    autoRotateButton.onmouseout = () => {
+      autoRotateButton.style.backgroundColor = this.autoRotate ? "#28a745" : "#6c757d";
+    };
+
+    autoRotateButton.onclick = () => {
+      this.autoRotate = !this.autoRotate;
+      autoRotateButton.textContent = this.autoRotate ? "Stop Rotate" : "Auto Rotate";
+      autoRotateButton.style.backgroundColor = this.autoRotate ? "#28a745" : "#6c757d";
+    };
+
     // Explode button
     const explodeButton = document.createElement("button");
     explodeButton.textContent = this.explodeAmount === 0 ? "Explode" : "Reset"; // Set initial text
@@ -306,6 +345,7 @@ export class ViewerModule {
     explodeButton.style.transition = "background-color 0.3s";
     explodeButton.style.width = "100px"; // Fixed width to prevent layout shift
     explodeButton.style.minWidth = "100px"; // Ensure minimum width
+    explodeButton.style.height = "40px";
     explodeButton.style.textAlign = "center"; // Center text within fixed width
 
     explodeButton.onmouseover = () => {
@@ -316,9 +356,15 @@ export class ViewerModule {
     };
 
     explodeButton.onclick = () => {
-      this.explodeAmount = this.explodeAmount === 0 ? 0.3 : 0; // Toggle between 0 and 0.3 (initial exploded state)
-      this.applyExplodeEffect(this.explodeAmount);
-      explodeButton.textContent = this.explodeAmount === 0 ? "Explode" : "Reset";
+      if (this.explodeAmount === 0) {
+        // If currently collapsed, explode to initial state
+        this.explodeAmount = 0.3;
+        explodeButton.textContent = "Reset";
+        this.applyExplodeEffect(this.explodeAmount);
+      } else {
+        // If currently exploded, reload the model to initial state
+        this.reloadModel();
+      }
       slider.value = this.explodeAmount.toString(); // Update slider to match button action
     };
 
@@ -350,6 +396,7 @@ export class ViewerModule {
     sliderContainer.appendChild(label);
     sliderContainer.appendChild(slider);
 
+    controlsContainer.appendChild(autoRotateButton);
     controlsContainer.appendChild(explodeButton);
     controlsContainer.appendChild(sliderContainer);
     controlsDiv.appendChild(controlsContainer);
@@ -375,8 +422,72 @@ export class ViewerModule {
     });
   }
 
+  rotateParts() {
+    // Only rotate parts in the exploded scene (right view)
+    if (!this.explodedModel) return;
+
+    const root = this.explodedModel.children[0];
+    if (!root) return;
+
+    root.children.forEach((part, index) => {
+      // Store original rotation and position if not already stored
+      if (!part.userData.originalRotation) {
+        part.userData.originalRotation = part.rotation.clone();
+      }
+      if (!part.userData.originalPosition) {
+        part.userData.originalPosition = part.position.clone();
+      }
+
+      // Apply rotation around Y-axis only (self-rotation)
+      part.rotation.y = this.rotationAngle;
+    });
+
+    // Reapply explode effect to maintain exploded positions
+    this.applyExplodeEffect(this.explodeAmount);
+  }
+
+  resetPartRotations() {
+    // Reset all part rotations to their original state
+    if (!this.explodedModel) return;
+
+    const root = this.explodedModel.children[0];
+    if (!root) return;
+
+    root.children.forEach((part) => {
+      if (part.userData.originalRotation) {
+        part.rotation.copy(part.userData.originalRotation);
+      } else {
+        part.rotation.set(0, 0, 0);
+      }
+    });
+
+    // Reset rotation angle to start fresh
+    this.rotationAngle = 0;
+  }
+
+  reloadModel() {
+    // Get the current model base name
+    const currentModelIndex = this.modelBaseNames.findIndex(name =>
+      this.originalModel && this.originalModel.userData && this.originalModel.userData.baseName === name
+    );
+
+    if (currentModelIndex === -1) {
+      // Fallback to first model if we can't find current one
+      this.loadModel(this.modelBaseNames[0]);
+    } else {
+      // Reload the current model
+      this.loadModel(this.modelBaseNames[currentModelIndex]);
+    }
+  }
+
   animate() {
     requestAnimationFrame(() => this.animate());
+
+    // Auto-rotate individual parts if enabled
+    if (this.autoRotate) {
+      this.rotationAngle += this.rotationSpeed;
+      this.rotateParts();
+    }
 
     // Update controls for both scenes
     this.originalControls.update();
