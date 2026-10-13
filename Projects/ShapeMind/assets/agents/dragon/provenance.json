@@ -1,0 +1,20 @@
+{
+  "model": "ft-tristream-30w S1/S2 step-100000 EMA",
+  "request_id": "20261008T123649Z_homepage_mechanical_dragon_v2_533018bb",
+  "frame": "gltf_yup",
+  "elapsed_s": 311.3,
+  "exported_parts": 21,
+  "requested_parts": 21,
+  "total_vertices": 8683,
+  "total_faces": 16885,
+  "rig_source": "agent-authored articulation plan",
+  "display_transform": {
+    "original_glb_center_yup": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "uniform_display_scale": 32.14124570868073,
+    "plan_to_glb_scale": 2
+  }
+}

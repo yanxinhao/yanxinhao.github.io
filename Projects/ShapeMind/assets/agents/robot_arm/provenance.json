@@ -1,0 +1,20 @@
+{
+  "model": "ft-tristream-30w S1/S2 step-100000 EMA",
+  "request_id": "20261008T123301Z_homepage_robot_arm_v2_b8d6412a",
+  "frame": "gltf_yup",
+  "elapsed_s": 312.4,
+  "exported_parts": 12,
+  "requested_parts": 12,
+  "total_vertices": 6392,
+  "total_faces": 12614,
+  "rig_source": "agent-authored articulation plan",
+  "display_transform": {
+    "original_glb_center_yup": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "uniform_display_scale": 32.109750122488975,
+    "plan_to_glb_scale": 2
+  }
+}

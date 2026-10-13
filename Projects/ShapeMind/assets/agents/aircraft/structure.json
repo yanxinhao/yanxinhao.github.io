@@ -1,0 +1,277 @@
+{
+  "object": {
+    "name": "Folding-wing Aircraft"
+  },
+  "parts": [
+    {
+      "id": "fuselage",
+      "name": "tapered aircraft fuselage"
+    },
+    {
+      "id": "engine",
+      "name": "front engine cowling"
+    },
+    {
+      "id": "propeller",
+      "name": "front two blade propeller"
+    },
+    {
+      "id": "canopy",
+      "name": "cockpit canopy"
+    },
+    {
+      "id": "inner_wing_left",
+      "name": "left inner wing"
+    },
+    {
+      "id": "outer_wing_left",
+      "name": "left folding outer wing"
+    },
+    {
+      "id": "tailplane_left",
+      "name": "left horizontal tailplane"
+    },
+    {
+      "id": "landing_strut_left",
+      "name": "left landing strut"
+    },
+    {
+      "id": "wheel_left",
+      "name": "left landing wheel"
+    },
+    {
+      "id": "inner_wing_right",
+      "name": "right inner wing"
+    },
+    {
+      "id": "outer_wing_right",
+      "name": "right folding outer wing"
+    },
+    {
+      "id": "tailplane_right",
+      "name": "right horizontal tailplane"
+    },
+    {
+      "id": "landing_strut_right",
+      "name": "right landing strut"
+    },
+    {
+      "id": "wheel_right",
+      "name": "right landing wheel"
+    },
+    {
+      "id": "rudder",
+      "name": "vertical tail rudder"
+    }
+  ],
+  "provenance": "Agent-authored articulation, attached to actual Semantic PartGen meshes; not inferred by the mesh generator.",
+  "articulation": [
+    {
+      "group_id": "airframe",
+      "parent_group": null,
+      "part_ids": [
+        "fuselage",
+        "engine",
+        "canopy",
+        "inner_wing_left",
+        "inner_wing_right",
+        "landing_strut_left",
+        "landing_strut_right"
+      ],
+      "type": "fixed",
+      "params": {}
+    },
+    {
+      "group_id": "propeller_spin",
+      "parent_group": "airframe",
+      "part_ids": [
+        "propeller"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          1,
+          0
+        ],
+        "rotate_origin": [
+          31.5,
+          6.877724641490925,
+          33.100799764590484
+        ],
+        "rotate_range": [
+          0,
+          360
+        ]
+      }
+    },
+    {
+      "group_id": "left_wing_fold",
+      "parent_group": "airframe",
+      "part_ids": [
+        "outer_wing_left"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          1,
+          0
+        ],
+        "rotate_origin": [
+          19.337174081412456,
+          29.962017286905347,
+          33.3518871760667
+        ],
+        "rotate_range": [
+          0,
+          26
+        ]
+      }
+    },
+    {
+      "group_id": "right_wing_fold",
+      "parent_group": "airframe",
+      "part_ids": [
+        "outer_wing_right"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          1,
+          0
+        ],
+        "rotate_origin": [
+          43.662825918587544,
+          29.962017286905347,
+          33.3518871760667
+        ],
+        "rotate_range": [
+          -26,
+          0
+        ]
+      }
+    },
+    {
+      "group_id": "rudder_yaw",
+      "parent_group": "airframe",
+      "part_ids": [
+        "rudder"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          0,
+          1
+        ],
+        "rotate_origin": [
+          31.5,
+          51.49729473663561,
+          34.38458540068661
+        ],
+        "rotate_range": [
+          -18,
+          18
+        ]
+      }
+    },
+    {
+      "group_id": "tail_left",
+      "parent_group": "airframe",
+      "part_ids": [
+        "tailplane_left"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          27.645878944580677,
+          52.451439756743504,
+          34.32113858165768
+        ],
+        "rotate_range": [
+          -9,
+          9
+        ]
+      }
+    },
+    {
+      "group_id": "wheel_left",
+      "parent_group": "airframe",
+      "part_ids": [
+        "wheel_left"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          20.890881898970083,
+          19.35289918587543,
+          19.93355991760667
+        ],
+        "rotate_range": [
+          0,
+          360
+        ]
+      }
+    },
+    {
+      "group_id": "tail_right",
+      "parent_group": "airframe",
+      "part_ids": [
+        "tailplane_right"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          35.3284723413438,
+          52.451439756743504,
+          34.32113858165768
+        ],
+        "rotate_range": [
+          -9,
+          9
+        ]
+      }
+    },
+    {
+      "group_id": "wheel_right",
+      "parent_group": "airframe",
+      "part_ids": [
+        "wheel_right"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          42.077748245218245,
+          19.35289918587543,
+          19.93355991760667
+        ],
+        "rotate_range": [
+          0,
+          360
+        ]
+      }
+    }
+  ]
+}

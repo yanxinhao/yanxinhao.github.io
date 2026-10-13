@@ -1,0 +1,340 @@
+{
+  "object": {
+    "name": "Service Humanoid"
+  },
+  "parts": [
+    {
+      "id": "head",
+      "name": "robot head"
+    },
+    {
+      "id": "neck",
+      "name": "neck column"
+    },
+    {
+      "id": "torso",
+      "name": "chest torso"
+    },
+    {
+      "id": "waist",
+      "name": "waist connector"
+    },
+    {
+      "id": "pelvis",
+      "name": "pelvis shell"
+    },
+    {
+      "id": "left_shoulder",
+      "name": "left shoulder hub"
+    },
+    {
+      "id": "left_upperarm",
+      "name": "left upper arm"
+    },
+    {
+      "id": "left_elbow",
+      "name": "left elbow hub"
+    },
+    {
+      "id": "left_forearm",
+      "name": "left forearm"
+    },
+    {
+      "id": "left_hand",
+      "name": "left hand"
+    },
+    {
+      "id": "left_thigh",
+      "name": "left thigh"
+    },
+    {
+      "id": "left_knee",
+      "name": "left knee hub"
+    },
+    {
+      "id": "left_shin",
+      "name": "left lower leg"
+    },
+    {
+      "id": "left_foot",
+      "name": "left foot"
+    },
+    {
+      "id": "right_shoulder",
+      "name": "right shoulder hub"
+    },
+    {
+      "id": "right_upperarm",
+      "name": "right upper arm"
+    },
+    {
+      "id": "right_elbow",
+      "name": "right elbow hub"
+    },
+    {
+      "id": "right_forearm",
+      "name": "right forearm"
+    },
+    {
+      "id": "right_hand",
+      "name": "right hand"
+    },
+    {
+      "id": "right_thigh",
+      "name": "right thigh"
+    },
+    {
+      "id": "right_knee",
+      "name": "right knee hub"
+    },
+    {
+      "id": "right_shin",
+      "name": "right lower leg"
+    },
+    {
+      "id": "right_foot",
+      "name": "right foot"
+    }
+  ],
+  "provenance": "Agent-authored articulation, attached to actual Semantic PartGen meshes; not inferred by the mesh generator.",
+  "articulation": [
+    {
+      "group_id": "body",
+      "parent_group": null,
+      "part_ids": [
+        "torso",
+        "waist",
+        "pelvis",
+        "neck"
+      ],
+      "type": "fixed",
+      "params": {}
+    },
+    {
+      "group_id": "head_yaw",
+      "parent_group": "body",
+      "part_ids": [
+        "head"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          0,
+          1
+        ],
+        "rotate_origin": [
+          31.5,
+          32.781875915974595,
+          54.93544308744504
+        ],
+        "rotate_range": [
+          -15,
+          15
+        ]
+      }
+    },
+    {
+      "group_id": "left_shoulder_abduction",
+      "parent_group": "body",
+      "part_ids": [
+        "left_shoulder",
+        "left_upperarm"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          1,
+          0
+        ],
+        "rotate_origin": [
+          23.047872984855886,
+          33.294126038104544,
+          49.620848070346845
+        ],
+        "rotate_range": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "group_id": "left_elbow_pitch",
+      "parent_group": "left_shoulder_abduction",
+      "part_ids": [
+        "left_elbow",
+        "left_forearm",
+        "left_hand"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          20.614684904738642,
+          33.2300947728383,
+          41.104689789936494
+        ],
+        "rotate_range": [
+          -18,
+          0
+        ]
+      }
+    },
+    {
+      "group_id": "left_hip_pitch",
+      "parent_group": "body",
+      "part_ids": [
+        "left_thigh"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          26.953780166096728,
+          33.166063507572055,
+          35.149782120175864
+        ],
+        "rotate_range": [
+          -3,
+          3
+        ]
+      }
+    },
+    {
+      "group_id": "left_knee_pitch",
+      "parent_group": "left_hip_pitch",
+      "part_ids": [
+        "left_knee",
+        "left_shin",
+        "left_foot"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          26.82571763556424,
+          32.71784465070835,
+          20.80677870053737
+        ],
+        "rotate_range": [
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "group_id": "right_shoulder_abduction",
+      "parent_group": "body",
+      "part_ids": [
+        "right_shoulder",
+        "right_upperarm"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          1,
+          0
+        ],
+        "rotate_origin": [
+          39.952127015144114,
+          33.294126038104544,
+          49.620848070346845
+        ],
+        "rotate_range": [
+          -12,
+          0
+        ]
+      }
+    },
+    {
+      "group_id": "right_elbow_pitch",
+      "parent_group": "right_shoulder_abduction",
+      "part_ids": [
+        "right_elbow",
+        "right_forearm",
+        "right_hand"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          42.38531509526136,
+          33.2300947728383,
+          41.104689789936494
+        ],
+        "rotate_range": [
+          -18,
+          0
+        ]
+      }
+    },
+    {
+      "group_id": "right_hip_pitch",
+      "parent_group": "body",
+      "part_ids": [
+        "right_thigh"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          36.04621983390327,
+          33.166063507572055,
+          35.149782120175864
+        ],
+        "rotate_range": [
+          -3,
+          3
+        ]
+      }
+    },
+    {
+      "group_id": "right_knee_pitch",
+      "parent_group": "right_hip_pitch",
+      "part_ids": [
+        "right_knee",
+        "right_shin",
+        "right_foot"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          36.17428236443576,
+          32.71784465070835,
+          20.80677870053737
+        ],
+        "rotate_range": [
+          0,
+          6
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "object": {
+    "name": "Tracked Excavator"
+  },
+  "parts": [
+    {
+      "id": "left_track",
+      "name": "left caterpillar track"
+    },
+    {
+      "id": "right_track",
+      "name": "right caterpillar track"
+    },
+    {
+      "id": "undercarriage",
+      "name": "central undercarriage frame"
+    },
+    {
+      "id": "upper_platform",
+      "name": "rotating upper platform"
+    },
+    {
+      "id": "cabin",
+      "name": "operator cabin"
+    },
+    {
+      "id": "counterweight",
+      "name": "rear counterweight"
+    },
+    {
+      "id": "boom",
+      "name": "main boom"
+    },
+    {
+      "id": "stick",
+      "name": "forearm stick"
+    },
+    {
+      "id": "bucket",
+      "name": "digging bucket"
+    },
+    {
+      "id": "left_tooth",
+      "name": "left bucket tooth"
+    },
+    {
+      "id": "middle_tooth",
+      "name": "middle bucket tooth"
+    },
+    {
+      "id": "right_tooth",
+      "name": "right bucket tooth"
+    }
+  ],
+  "provenance": "Agent-authored articulation, attached to actual Semantic PartGen meshes; not inferred by the mesh generator.",
+  "articulation": [
+    {
+      "group_id": "base",
+      "parent_group": null,
+      "part_ids": [
+        "left_track",
+        "right_track",
+        "undercarriage"
+      ],
+      "type": "fixed",
+      "params": {}
+    },
+    {
+      "group_id": "slew",
+      "parent_group": "base",
+      "part_ids": [
+        "upper_platform",
+        "cabin",
+        "counterweight"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          0,
+          1
+        ],
+        "rotate_origin": [
+          31.53126526624328,
+          41.104689789936494,
+          17.07733268197362
+        ],
+        "rotate_range": [
+          -12,
+          12
+        ]
+      }
+    },
+    {
+      "group_id": "shoulder",
+      "parent_group": "slew",
+      "part_ids": [
+        "boom"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          37.61423546653639,
+          32.460468978993646,
+          22.840146555935515
+        ],
+        "rotate_range": [
+          -5,
+          2
+        ]
+      }
+    },
+    {
+      "group_id": "elbow",
+      "parent_group": "shoulder",
+      "part_ids": [
+        "stick"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          37.61423546653639,
+          8.768900830483638,
+          50.373590620420124
+        ],
+        "rotate_range": [
+          -6,
+          6
+        ]
+      }
+    },
+    {
+      "group_id": "bucket_pitch",
+      "parent_group": "elbow",
+      "part_ids": [
+        "bucket",
+        "left_tooth",
+        "middle_tooth",
+        "right_tooth"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          37.61423546653639,
+          4.92702491450904,
+          20.599052271616998
+        ],
+        "rotate_range": [
+          -10,
+          8
+        ]
+      }
+    }
+  ]
+}

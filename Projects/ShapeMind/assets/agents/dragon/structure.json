@@ -1,0 +1,537 @@
+{
+  "object": {
+    "name": "Mechanical Dragon"
+  },
+  "parts": [
+    {
+      "id": "torso",
+      "name": "central armored torso"
+    },
+    {
+      "id": "neck",
+      "name": "raised front neck"
+    },
+    {
+      "id": "head",
+      "name": "upper dragon head"
+    },
+    {
+      "id": "jaw",
+      "name": "lower hinged jaw"
+    },
+    {
+      "id": "horn_left",
+      "name": "left swept horn"
+    },
+    {
+      "id": "horn_right",
+      "name": "right swept horn"
+    },
+    {
+      "id": "wing_left_inner",
+      "name": "left inner wing spar"
+    },
+    {
+      "id": "wing_left_outer",
+      "name": "left outer wing panel"
+    },
+    {
+      "id": "wing_right_inner",
+      "name": "right inner wing spar"
+    },
+    {
+      "id": "wing_right_outer",
+      "name": "right outer wing panel"
+    },
+    {
+      "id": "tail_root",
+      "name": "first armored tail segment"
+    },
+    {
+      "id": "tail_middle",
+      "name": "middle armored tail segment"
+    },
+    {
+      "id": "tail_tip",
+      "name": "upturned pointed tail segment"
+    },
+    {
+      "id": "leg_front_left_upper",
+      "name": "front left upper leg"
+    },
+    {
+      "id": "leg_front_left_lower",
+      "name": "front left lower leg and clawed foot"
+    },
+    {
+      "id": "leg_front_right_upper",
+      "name": "front right upper leg"
+    },
+    {
+      "id": "leg_front_right_lower",
+      "name": "front right lower leg and clawed foot"
+    },
+    {
+      "id": "leg_rear_left_upper",
+      "name": "rear left upper leg"
+    },
+    {
+      "id": "leg_rear_left_lower",
+      "name": "rear left lower leg and clawed foot"
+    },
+    {
+      "id": "leg_rear_right_upper",
+      "name": "rear right upper leg"
+    },
+    {
+      "id": "leg_rear_right_lower",
+      "name": "rear right lower leg and clawed foot"
+    }
+  ],
+  "provenance": "Agent-authored articulation, attached to actual Semantic PartGen meshes; not inferred by the mesh generator.",
+  "articulation": [
+    {
+      "group_id": "body",
+      "parent_group": null,
+      "part_ids": [
+        "torso"
+      ],
+      "type": "fixed",
+      "params": {}
+    },
+    {
+      "group_id": "neck",
+      "parent_group": "body",
+      "part_ids": [
+        "neck"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          31.5,
+          22.493894387444826,
+          32.45543066993624
+        ],
+        "rotate_range": [
+          -3,
+          3
+        ]
+      }
+    },
+    {
+      "group_id": "head",
+      "parent_group": "neck",
+      "part_ids": [
+        "head",
+        "horn_left",
+        "horn_right"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          31.5,
+          13.18083987837175,
+          49.8193529691025
+        ],
+        "rotate_range": [
+          -4,
+          4
+        ]
+      }
+    },
+    {
+      "group_id": "jaw",
+      "parent_group": "head",
+      "part_ids": [
+        "jaw"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          31.5,
+          12.850042177538008,
+          47.25673144874939
+        ],
+        "rotate_range": [
+          -5,
+          5
+        ]
+      }
+    },
+    {
+      "group_id": "wing_left",
+      "parent_group": "body",
+      "part_ids": [
+        "wing_left_inner"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          1,
+          0
+        ],
+        "rotate_origin": [
+          24.13560493575282,
+          29.897501771456596,
+          34.05709322609122
+        ],
+        "rotate_range": [
+          -8,
+          8
+        ]
+      }
+    },
+    {
+      "group_id": "wing_left_outer",
+      "parent_group": "wing_left",
+      "part_ids": [
+        "wing_left_outer"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          1,
+          0
+        ],
+        "rotate_origin": [
+          14.84524214615007,
+          33.10584091809711,
+          49.17717087984306
+        ],
+        "rotate_range": [
+          -5,
+          5
+        ]
+      }
+    },
+    {
+      "group_id": "wing_right",
+      "parent_group": "body",
+      "part_ids": [
+        "wing_right_inner"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          -1,
+          0
+        ],
+        "rotate_origin": [
+          38.88792245610593,
+          29.897501771456596,
+          34.05709322609122
+        ],
+        "rotate_range": [
+          -8,
+          8
+        ]
+      }
+    },
+    {
+      "group_id": "wing_right_outer",
+      "parent_group": "wing_right",
+      "part_ids": [
+        "wing_right_outer"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          -1,
+          0
+        ],
+        "rotate_origin": [
+          48.15475785384993,
+          33.10584091809711,
+          49.17717087984306
+        ],
+        "rotate_range": [
+          -5,
+          5
+        ]
+      }
+    },
+    {
+      "group_id": "tail_root",
+      "parent_group": "body",
+      "part_ids": [
+        "tail_root"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          0,
+          1
+        ],
+        "rotate_origin": [
+          31.513756453163314,
+          42.434773202550275,
+          25.073936462972043
+        ],
+        "rotate_range": [
+          -5,
+          5
+        ]
+      }
+    },
+    {
+      "group_id": "tail_middle",
+      "parent_group": "tail_root",
+      "part_ids": [
+        "tail_middle"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          0,
+          1
+        ],
+        "rotate_origin": [
+          34.38834090436489,
+          50.465327725355564,
+          25.718111309465424
+        ],
+        "rotate_range": [
+          -5,
+          5
+        ]
+      }
+    },
+    {
+      "group_id": "tail_tip",
+      "parent_group": "tail_middle",
+      "part_ids": [
+        "tail_tip"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          38.23436236586562,
+          58.18173371260422,
+          28.611144835703776
+        ],
+        "rotate_range": [
+          -5,
+          5
+        ]
+      }
+    },
+    {
+      "group_id": "leg_front_left",
+      "parent_group": "body",
+      "part_ids": [
+        "leg_front_left_upper"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          24.143640247179988,
+          23.461281600784698,
+          23.464688572829818
+        ],
+        "rotate_range": [
+          -3,
+          3
+        ]
+      }
+    },
+    {
+      "group_id": "leg_front_left_knee",
+      "parent_group": "leg_front_left",
+      "part_ids": [
+        "leg_front_left_lower"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          20.907723911721433,
+          23.449003644923984,
+          14.793751870524765
+        ],
+        "rotate_range": [
+          -4,
+          4
+        ]
+      }
+    },
+    {
+      "group_id": "leg_rear_left",
+      "parent_group": "body",
+      "part_ids": [
+        "leg_rear_left_upper"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          24.13168370377636,
+          40.1822504207945,
+          23.472531036782733
+        ],
+        "rotate_range": [
+          -3,
+          3
+        ]
+      }
+    },
+    {
+      "group_id": "leg_rear_left_knee",
+      "parent_group": "leg_rear_left",
+      "part_ids": [
+        "leg_rear_left_lower"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          20.902067052476703,
+          40.17395797940167,
+          14.771574410985778
+        ],
+        "rotate_range": [
+          -4,
+          4
+        ]
+      }
+    },
+    {
+      "group_id": "leg_front_right",
+      "parent_group": "body",
+      "part_ids": [
+        "leg_front_right_upper"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          38.85635975282001,
+          23.461281600784698,
+          23.464688572829818
+        ],
+        "rotate_range": [
+          -3,
+          3
+        ]
+      }
+    },
+    {
+      "group_id": "leg_front_right_knee",
+      "parent_group": "leg_front_right",
+      "part_ids": [
+        "leg_front_right_lower"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          42.05737069543894,
+          23.449003644923984,
+          14.793751870524765
+        ],
+        "rotate_range": [
+          -4,
+          4
+        ]
+      }
+    },
+    {
+      "group_id": "leg_rear_right",
+      "parent_group": "body",
+      "part_ids": [
+        "leg_rear_right_upper"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          38.86831629622364,
+          40.1822504207945,
+          23.472531036782733
+        ],
+        "rotate_range": [
+          -3,
+          3
+        ]
+      }
+    },
+    {
+      "group_id": "leg_rear_right_knee",
+      "parent_group": "leg_rear_right",
+      "part_ids": [
+        "leg_rear_right_lower"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          42.07324847081903,
+          40.17395797940167,
+          14.771574410985778
+        ],
+        "rotate_range": [
+          -4,
+          4
+        ]
+      }
+    }
+  ]
+}

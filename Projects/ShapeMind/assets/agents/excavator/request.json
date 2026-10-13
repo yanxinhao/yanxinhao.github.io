@@ -1,0 +1,165 @@
+{
+  "id": "shapemind_agent_v2_excavator",
+  "rotation_index": 0,
+  "object_num_vertices": 5500,
+  "parts": [
+    {
+      "id": "left_track",
+      "label": "left caterpillar track",
+      "appearance": "elongated capsule-shaped continuous track with a thick tread loop, rounded ends and an inset row of circular rollers, mounted along the left side at the bottom",
+      "bbox": [
+        -0.25,
+        -0.2,
+        -0.44,
+        -0.14,
+        0.43,
+        -0.26
+      ]
+    },
+    {
+      "id": "right_track",
+      "label": "right caterpillar track",
+      "appearance": "elongated capsule-shaped continuous track with a thick tread loop and inset rollers, mounted along the right side parallel to the left track",
+      "bbox": [
+        0.14,
+        -0.2,
+        -0.44,
+        0.25,
+        0.43,
+        -0.26
+      ]
+    },
+    {
+      "id": "undercarriage",
+      "label": "central undercarriage frame",
+      "appearance": "low thick rectangular cross frame bridging the two parallel tracks, with a raised circular hub centered above it",
+      "bbox": [
+        -0.18,
+        -0.14,
+        -0.36,
+        0.18,
+        0.37,
+        -0.22
+      ]
+    },
+    {
+      "id": "upper_platform",
+      "label": "rotating upper platform",
+      "appearance": "wide low horizontal rounded rectangular platform with a curved rear edge, centered above the undercarriage hub",
+      "bbox": [
+        -0.24,
+        -0.08,
+        -0.235,
+        0.24,
+        0.48,
+        -0.145
+      ]
+    },
+    {
+      "id": "cabin",
+      "label": "operator cabin",
+      "appearance": "tall rectangular enclosure with rounded roof corners, thin framed large flat window panels and a slightly sloping front face, rising from the left side of the platform",
+      "bbox": [
+        -0.225,
+        -0.025,
+        -0.15,
+        -0.025,
+        0.285,
+        0.3
+      ]
+    },
+    {
+      "id": "counterweight",
+      "label": "rear counterweight",
+      "appearance": "thick rounded rectangular block with a curved outer back and beveled upper edges, mounted behind the cabin across the rear of the platform",
+      "bbox": [
+        -0.23,
+        0.285,
+        -0.145,
+        0.23,
+        0.5,
+        0.075
+      ]
+    },
+    {
+      "id": "boom",
+      "label": "main boom",
+      "appearance": "thick bent elongated rectangular beam rising diagonally forward from the platform before extending forward almost horizontally, with large circular pivot lugs at both ends",
+      "bbox": [
+        0.035,
+        -0.385,
+        -0.17,
+        0.155,
+        0.065,
+        0.345
+      ]
+    },
+    {
+      "id": "stick",
+      "label": "forearm stick",
+      "appearance": "long tapered rectangular beam descending nearly vertically from an upper circular pivot lug, with a short projecting extension above the pivot and a forked lower end",
+      "bbox": [
+        0.035,
+        -0.455,
+        -0.19,
+        0.155,
+        -0.33,
+        0.44
+      ]
+    },
+    {
+      "id": "bucket",
+      "label": "digging bucket",
+      "appearance": "wide hollow curved scoop with thick curved side plates, open toward the machine, a straight lower cutting edge and paired attachment lugs at the upper rear",
+      "bbox": [
+        -0.055,
+        -0.49,
+        -0.385,
+        0.245,
+        -0.335,
+        -0.145
+      ]
+    },
+    {
+      "id": "left_tooth",
+      "label": "left bucket tooth",
+      "appearance": "short thick tapered wedge projecting diagonally down and forward from the left end of the bucket cutting edge",
+      "bbox": [
+        -0.055,
+        -0.5,
+        -0.44,
+        0.02,
+        -0.44,
+        -0.34
+      ]
+    },
+    {
+      "id": "middle_tooth",
+      "label": "middle bucket tooth",
+      "appearance": "short thick tapered wedge projecting diagonally down and forward from the middle of the bucket cutting edge",
+      "bbox": [
+        0.06,
+        -0.5,
+        -0.44,
+        0.13,
+        -0.44,
+        -0.34
+      ]
+    },
+    {
+      "id": "right_tooth",
+      "label": "right bucket tooth",
+      "appearance": "short thick tapered wedge projecting diagonally down and forward from the right end of the bucket cutting edge",
+      "bbox": [
+        0.17,
+        -0.5,
+        -0.44,
+        0.245,
+        -0.44,
+        -0.34
+      ]
+    }
+  ],
+  "return_glb": false,
+  "explode": 0
+}

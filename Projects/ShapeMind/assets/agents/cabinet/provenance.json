@@ -1,0 +1,124 @@
+{
+  "model": "ft-tristream-30w S1/S2 step-100000 EMA",
+  "request_id": "20261008T110539Z_shapemind_agent_vintage_cabinet_64f50a85",
+  "frame": "gltf_yup",
+  "elapsed_s": 253.1,
+  "exported_parts": 7,
+  "requested_parts": 7,
+  "total_vertices": 2611,
+  "total_faces": 5012,
+  "parts": [
+    {
+      "index": 0,
+      "id": "cabinet_body",
+      "label": "cabinet body",
+      "vertices": 570,
+      "faces": 1136,
+      "exported": true,
+      "node": "cabinet_body__cabinet_body",
+      "color_rgba": [
+        237,
+        42,
+        42,
+        255
+      ],
+      "color_hex": "#ED2A2A"
+    },
+    {
+      "index": 1,
+      "id": "drawer_front",
+      "label": "upper drawer front",
+      "vertices": 96,
+      "faces": 188,
+      "exported": true,
+      "node": "drawer_front__upper_drawer_front",
+      "color_rgba": [
+        198,
+        172,
+        16,
+        255
+      ],
+      "color_hex": "#C6AC10"
+    },
+    {
+      "index": 2,
+      "id": "knob",
+      "label": "drawer round knob",
+      "vertices": 647,
+      "faces": 1252,
+      "exported": true,
+      "node": "knob__drawer_round_knob",
+      "color_rgba": [
+        98,
+        237,
+        42,
+        255
+      ],
+      "color_hex": "#62ED2A"
+    },
+    {
+      "index": 3,
+      "id": "front_left_leg",
+      "label": "front left leg",
+      "vertices": 355,
+      "faces": 667,
+      "exported": true,
+      "node": "front_left_leg__front_left_leg",
+      "color_rgba": [
+        16,
+        198,
+        120,
+        255
+      ],
+      "color_hex": "#10C678"
+    },
+    {
+      "index": 4,
+      "id": "rear_left_leg",
+      "label": "rear left leg",
+      "vertices": 328,
+      "faces": 619,
+      "exported": true,
+      "node": "rear_left_leg__rear_left_leg",
+      "color_rgba": [
+        42,
+        154,
+        237,
+        255
+      ],
+      "color_hex": "#2A9AED"
+    },
+    {
+      "index": 5,
+      "id": "front_right_leg",
+      "label": "front right leg",
+      "vertices": 343,
+      "faces": 644,
+      "exported": true,
+      "node": "front_right_leg__front_right_leg",
+      "color_rgba": [
+        68,
+        16,
+        198,
+        255
+      ],
+      "color_hex": "#4410C6"
+    },
+    {
+      "index": 6,
+      "id": "rear_right_leg",
+      "label": "rear right leg",
+      "vertices": 272,
+      "faces": 506,
+      "exported": true,
+      "node": "rear_right_leg__rear_right_leg",
+      "color_rgba": [
+        237,
+        42,
+        209,
+        255
+      ],
+      "color_hex": "#ED2AD1"
+    }
+  ]
+}

@@ -1,0 +1,537 @@
+{
+  "object": {
+    "name": "Robotic hand"
+  },
+  "animation": "hand_grasp",
+  "provenance": "Presentation rig authored from existing generated joint meshes; not predicted kinematics. Original mesh topology unchanged.",
+  "parts": [
+    {
+      "id": "0",
+      "name": "index finger middle phalanx"
+    },
+    {
+      "id": "1",
+      "name": "ring finger middle phalanx"
+    },
+    {
+      "id": "2",
+      "name": "pinky finger middle phalanx"
+    },
+    {
+      "id": "3",
+      "name": "index finger proximal phalanx"
+    },
+    {
+      "id": "4",
+      "name": "index finger distal phalanx"
+    },
+    {
+      "id": "5",
+      "name": "ring finger proximal phalanx"
+    },
+    {
+      "id": "6",
+      "name": "ring finger distal phalanx"
+    },
+    {
+      "id": "7",
+      "name": "pinky finger proximal phalanx"
+    },
+    {
+      "id": "8",
+      "name": "pinky finger distal phalanx"
+    },
+    {
+      "id": "9",
+      "name": "wrist connector joint"
+    },
+    {
+      "id": "10",
+      "name": "index finger base joint"
+    },
+    {
+      "id": "11",
+      "name": "ring finger base joint"
+    },
+    {
+      "id": "12",
+      "name": "pinky finger base joint"
+    },
+    {
+      "id": "13",
+      "name": "pinky finger middle joint"
+    },
+    {
+      "id": "14",
+      "name": "ring finger middle joint"
+    },
+    {
+      "id": "15",
+      "name": "index finger middle joint"
+    },
+    {
+      "id": "16",
+      "name": "index finger distal joint"
+    },
+    {
+      "id": "17",
+      "name": "ring finger distal joint"
+    },
+    {
+      "id": "18",
+      "name": "pinky finger distal joint"
+    },
+    {
+      "id": "19",
+      "name": "palm chassis"
+    },
+    {
+      "id": "20",
+      "name": "middle finger middle phalanx"
+    },
+    {
+      "id": "21",
+      "name": "middle finger distal phalanx"
+    },
+    {
+      "id": "22",
+      "name": "middle finger proximal phalanx"
+    },
+    {
+      "id": "23",
+      "name": "middle finger base joint"
+    },
+    {
+      "id": "24",
+      "name": "middle finger middle joint"
+    },
+    {
+      "id": "25",
+      "name": "middle finger distal joint"
+    },
+    {
+      "id": "26",
+      "name": "thumb middle phalanx"
+    },
+    {
+      "id": "27",
+      "name": "thumb distal phalanx"
+    },
+    {
+      "id": "28",
+      "name": "thumb proximal phalanx"
+    },
+    {
+      "id": "29",
+      "name": "thumb base joint"
+    },
+    {
+      "id": "30",
+      "name": "thumb middle joint"
+    },
+    {
+      "id": "31",
+      "name": "thumb distal joint"
+    }
+  ],
+  "articulation": [
+    {
+      "group_id": "palm",
+      "type": "fixed",
+      "part_ids": [
+        "19",
+        "9"
+      ]
+    },
+    {
+      "group_id": "index_finger_proximal",
+      "parent_group": "palm",
+      "type": "revolute",
+      "part_ids": [
+        "3",
+        "10"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.8621398553278723,
+          0.5066703759400537,
+          0.0
+        ],
+        "rotate_origin": [
+          28.493309020996094,
+          24.02734375,
+          38.598812103271484
+        ],
+        "rotate_range": [
+          17.474443435668945,
+          77.47444343566895
+        ]
+      },
+      "phase_offset": 0.0
+    },
+    {
+      "group_id": "index_finger_middle",
+      "parent_group": "index_finger_proximal",
+      "type": "revolute",
+      "part_ids": [
+        "0",
+        "15"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.8621398553278723,
+          0.5066703759400537,
+          0.0
+        ],
+        "rotate_origin": [
+          35.63762283325195,
+          11.8707275390625,
+          43.03777313232422
+        ],
+        "rotate_range": [
+          -3.4331321716308594,
+          71.56686782836914
+        ]
+      },
+      "phase_offset": 0.0
+    },
+    {
+      "group_id": "index_finger_distal",
+      "parent_group": "index_finger_middle",
+      "type": "revolute",
+      "part_ids": [
+        "4",
+        "16"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.8621398553278723,
+          0.5066703759400537,
+          0.0
+        ],
+        "rotate_origin": [
+          39.513954162597656,
+          5.325664520263672,
+          44.940185546875
+        ],
+        "rotate_range": [
+          1.2322940826416016,
+          41.2322940826416
+        ]
+      },
+      "phase_offset": 0.0
+    },
+    {
+      "group_id": "middle_finger_proximal",
+      "parent_group": "palm",
+      "type": "revolute",
+      "part_ids": [
+        "22",
+        "23"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.7037967639570487,
+          0.7104013760147049,
+          0.0
+        ],
+        "rotate_origin": [
+          33.828792572021484,
+          28.011005401611328,
+          38.581199645996094
+        ],
+        "rotate_range": [
+          -5.882279872894287,
+          54.11772012710571
+        ]
+      },
+      "phase_offset": 0.045
+    },
+    {
+      "group_id": "middle_finger_middle",
+      "parent_group": "middle_finger_proximal",
+      "type": "revolute",
+      "part_ids": [
+        "20",
+        "24"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.7037967639570487,
+          0.7104013760147049,
+          0.0
+        ],
+        "rotate_origin": [
+          45.48890686035156,
+          16.45929527282715,
+          36.890167236328125
+        ],
+        "rotate_range": [
+          -9.149483203887941,
+          65.85051679611206
+        ]
+      },
+      "phase_offset": 0.045
+    },
+    {
+      "group_id": "middle_finger_distal",
+      "parent_group": "middle_finger_middle",
+      "type": "revolute",
+      "part_ids": [
+        "21",
+        "25"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.7037967639570487,
+          0.7104013760147049,
+          0.0
+        ],
+        "rotate_origin": [
+          51.57125473022461,
+          10.389444351196289,
+          34.582611083984375
+        ],
+        "rotate_range": [
+          -2.1722488403320295,
+          37.82775115966797
+        ]
+      },
+      "phase_offset": 0.045
+    },
+    {
+      "group_id": "ring_finger_proximal",
+      "parent_group": "palm",
+      "type": "revolute",
+      "part_ids": [
+        "5",
+        "11"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.5656031967664216,
+          0.824677527162954,
+          0.0
+        ],
+        "rotate_origin": [
+          37.5330810546875,
+          33.23410415649414,
+          38.56358337402344
+        ],
+        "rotate_range": [
+          -41.255393981933594,
+          18.744606018066406
+        ]
+      },
+      "phase_offset": 0.09
+    },
+    {
+      "group_id": "ring_finger_middle",
+      "parent_group": "ring_finger_proximal",
+      "type": "revolute",
+      "part_ids": [
+        "1",
+        "14"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.5656031967664216,
+          0.824677527162954,
+          0.0
+        ],
+        "rotate_origin": [
+          46.59210968017578,
+          27.0209903717041,
+          28.92822265625
+        ],
+        "rotate_range": [
+          -17.839630126953125,
+          57.160369873046875
+        ]
+      },
+      "phase_offset": 0.09
+    },
+    {
+      "group_id": "ring_finger_distal",
+      "parent_group": "ring_finger_middle",
+      "type": "revolute",
+      "part_ids": [
+        "6",
+        "17"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.5656031967664216,
+          0.824677527162954,
+          0.0
+        ],
+        "rotate_origin": [
+          50.22351837158203,
+          24.989177703857422,
+          22.005558013916016
+        ],
+        "rotate_range": [
+          -16.151397705078125,
+          23.848602294921875
+        ]
+      },
+      "phase_offset": 0.09
+    },
+    {
+      "group_id": "pinky_finger_proximal",
+      "parent_group": "palm",
+      "type": "revolute",
+      "part_ids": [
+        "7",
+        "12"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.5409058134397804,
+          0.8410831712661058,
+          0.0
+        ],
+        "rotate_origin": [
+          40.188690185546875,
+          39.791259765625,
+          38.528350830078125
+        ],
+        "rotate_range": [
+          -37.58486557006837,
+          22.415134429931634
+        ]
+      },
+      "phase_offset": 0.135
+    },
+    {
+      "group_id": "pinky_finger_middle",
+      "parent_group": "pinky_finger_proximal",
+      "type": "revolute",
+      "part_ids": [
+        "2",
+        "13"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.5409058134397804,
+          0.8410831712661058,
+          0.0
+        ],
+        "rotate_origin": [
+          47.86903381347656,
+          34.85198211669922,
+          31.5
+        ],
+        "rotate_range": [
+          -77.2933235168457,
+          -2.293323516845703
+        ]
+      },
+      "phase_offset": 0.135
+    },
+    {
+      "group_id": "pinky_finger_distal",
+      "parent_group": "pinky_finger_middle",
+      "type": "revolute",
+      "part_ids": [
+        "8",
+        "18"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.5409058134397804,
+          0.8410831712661058,
+          0.0
+        ],
+        "rotate_origin": [
+          46.15879821777344,
+          36.723060607910156,
+          26.21552276611328
+        ],
+        "rotate_range": [
+          -71.20648193359374,
+          -31.206481933593736
+        ]
+      },
+      "phase_offset": 0.135
+    },
+    {
+      "group_id": "thumb_proximal",
+      "parent_group": "palm",
+      "type": "revolute",
+      "part_ids": [
+        "28",
+        "29"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.9762989104194475,
+          0.21642651758460588,
+          0.0
+        ],
+        "rotate_origin": [
+          13.461612701416016,
+          40.58054733276367,
+          38.440277099609375
+        ],
+        "rotate_range": [
+          -25.45056915283203,
+          14.549430847167969
+        ]
+      },
+      "phase_offset": 0.18
+    },
+    {
+      "group_id": "thumb_middle",
+      "parent_group": "thumb_proximal",
+      "type": "revolute",
+      "part_ids": [
+        "26",
+        "30"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.9762989104194475,
+          0.21642651758460588,
+          0.0
+        ],
+        "rotate_origin": [
+          16.209217071533203,
+          28.18612289428711,
+          32.39836120605469
+        ],
+        "rotate_range": [
+          -0.1613292694091797,
+          44.83867073059082
+        ]
+      },
+      "phase_offset": 0.18
+    },
+    {
+      "group_id": "thumb_distal",
+      "parent_group": "thumb_middle",
+      "type": "revolute",
+      "part_ids": [
+        "27",
+        "31"
+      ],
+      "params": {
+        "rotate_axis": [
+          0.9762989104194475,
+          0.21642651758460588,
+          0.0
+        ],
+        "rotate_origin": [
+          21.828876495361328,
+          19.081546783447266,
+          27.55426025390625
+        ],
+        "rotate_range": [
+          12.88957405090332,
+          37.88957405090332
+        ]
+      },
+      "phase_offset": 0.18
+    }
+  ]
+}

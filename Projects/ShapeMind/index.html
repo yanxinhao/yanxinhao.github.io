@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShapeMind — Think before you generate</title>
+<meta name="description" content="ShapeMind combines 3D semantic understanding with native part mesh generation. Explore articulated voxels and meshes, low-poly geometry, and agent-directed creation.">
+<meta property="og:title" content="ShapeMind — Think before you generate"><meta property="og:description" content="Native 3D understanding and generation of semantically structured 3D assets."><meta property="og:image" content="assets/images/teaser.webp">
+<meta name="theme-color" content="#f7f7f2"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=20261012-8">
+<script defer src="assets/vendor/three.min.js"></script><script defer src="assets/vendor/OrbitControls.js"></script><script defer src="assets/vendor/pako.min.js"></script><script defer src="assets/vendor/train_data_motion.js"></script><script defer src="viewer.js?v=20261012-7"></script><script defer src="app.js?v=20261012-7"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="wordmark" href="#"><span class="mark" aria-hidden="true">◈</span> ShapeMind</a><nav aria-label="Main navigation"><a href="#method">Overview</a><a href="#motion">Understanding</a><a href="#geometry">Geometry</a><a href="#agents">Agents <span>↗</span></a></nav><span class="header-note">STRUCTURED 3D GENERATION</span></header>
+<main id="main">
+<section class="hero wrap">
+<div class="eyebrow"><span class="status-dot"></span> THINK BEFORE YOU GENERATE</div>
+<h1>Shape<span>Mind</span></h1>
+<p class="paper-title">Native 3D Understanding and Generation<br class="desktop"> of Semantically Structured 3D Assets</p>
+<div class="paper-credits" aria-label="Authors and affiliations">
+<div class="paper-authors">
+<span><a href="https://yanxinhao.github.io/" target="_blank" rel="noopener" aria-label="Xinhao Yan’s homepage">Xinhao Yan</a><sup>1,2,†</sup></span>
+<span>Su Xu<sup>2</sup></span>
+<span>Yumeng Li<sup>2</sup></span>
+<span>Yingtian Liu<sup>2</sup></span>
+<span>Yuanchen Guo<sup>2</sup></span>
+<span>Yanpei Cao<sup>2,‡</sup></span>
+</div>
+<div class="paper-affiliations"><span><sup>1</sup> ShanghaiTech University</span><span><sup>2</sup> VAST</span></div>
+<div class="paper-author-notes"><span><sup>†</sup> Project leader</span><span><sup>‡</sup> Corresponding author</span></div>
+</div>
+<p class="hero-desc">Understand the parts. Generate the geometry.<br>Bring the structure to life.</p>
+<div class="hero-actions"><a class="button dark" href="#motion">Explore the 3D results <span>↘</span></a><a class="button light" href="#method">Read the overview <span>↓</span></a></div>
+<figure class="teaser"><img src="assets/images/teaser.webp" alt="ShapeMind's observe, understand, and build pipeline, surrounded by generated part-structured meshes." width="2200" height="1320" fetchpriority="high"><figcaption><span>01 / OBSERVE</span><span>02 / UNDERSTAND</span><span>03 / BUILD</span></figcaption></figure>
+<div class="hero-bottom"><p>From visual evidence to <strong>meaningful, editable, movable parts.</strong></p><span>ShapeVLM + Semantic PartGen</span></div>
+</section>
+<section id="method" class="section wrap">
+<div class="section-heading"><div><p class="eyebrow">THE IDEA</p><h2>Structure comes first.</h2></div><p>3D assets need more than a surface.<br>They need to know what they are made of.</p></div>
+<p class="abstract">ShapeMind generates low-poly 3D assets with explicit semantic part structure and, where applicable, kinematic structure. ShapeVLM reasons over an image and coarse geometry encoded as ordinary text. Its predicted part boxes, labels, and descriptions guide Semantic PartGen to create native triangle meshes, with each part independently editable.</p>
+<figure class="framework-figure">
+<a href="assets/images/framework.webp" target="_blank" rel="noopener" aria-label="Open Figure 2 at full resolution"><img loading="lazy" src="assets/images/framework.webp" width="2000" height="570" alt="Figure 2. ShapeMind observes an image and coarse geometry, reasons about semantic parts and kinematics with ShapeVLM, then generates native part meshes conditioned on part text and bounding boxes."></a>
+<figcaption><strong>Think before you generate.</strong> ShapeVLM grounds part semantics in 3D; Semantic PartGen turns this understanding into structured meshes. <a href="assets/images/framework.webp" target="_blank" rel="noopener">View full size ↗</a></figcaption>
+</figure>
+<div class="method-steps"><article><span class="step-number">01</span><h3>Observe</h3><p>An image supplies appearance. ShapeCodec turns coarse 3D occupancy into compact text tokens.</p><span class="step-tag">IMAGE + COARSE GEOMETRY</span></article><article><span class="step-number">02</span><h3>Understand</h3><p>ShapeVLM predicts semantic parts, their locations, and how groups of parts move together.</p><span class="step-tag">PARTS + KINEMATICS</span></article><article><span class="step-number">03</span><h3>Build</h3><p>Semantic PartGen jointly generates part vertices and topology in one shared object frame.</p><span class="step-tag">NATIVE PART MESHES</span></article></div>
+
+</section>
+<section id="motion" class="section motion-section">
+<div class="wrap"><div class="section-heading"><div><p class="eyebrow">01 / STRUCTURE IN MOTION</p><h2>Same parts.<br>Same motion.</h2></div><p>From predicted voxels to generated meshes,<br>the articulated structure stays connected.</p></div>
+<div id="motion-datasets" class="tabs dataset-tabs" role="group" aria-label="Choose result dataset"></div>
+<div id="motion-tabs" class="tabs" role="group" aria-label="Choose articulated object"></div>
+<div class="motion-grid"><article class="render-panel reference-panel"><div class="panel-heading"><span class="panel-index">A</span><h3>Reference image</h3></div><div class="reference-stage"><img id="motion-reference" alt="Reference object"></div><div class="panel-caption">Visual input</div></article><article class="render-panel"><div class="panel-heading"><span class="panel-index">B</span><h3>Predicted voxels</h3><span class="live-dot" title="Interactive 3D"></span></div><div id="voxel-view" class="viewport" aria-label="Interactive predicted voxel model"></div><div class="panel-caption">ShapeVLM · part geometry</div></article><article class="render-panel"><div class="panel-heading"><span class="panel-index">C</span><h3>Generated mesh</h3><span class="live-dot" title="Interactive 3D"></span></div><div id="mesh-view" class="viewport" aria-label="Interactive generated mesh"></div><div class="panel-caption">Semantic PartGen · native triangles</div></article></div>
+<div class="motion-controls"><button id="motion-play" class="small-button" aria-pressed="true">Pause motion</button><label class="scrub-label" for="motion-progress">Pose <input id="motion-progress" type="range" min="0" max="1000" value="0"><output id="motion-percent">0%</output></label><label class="check"><input id="motion-axes" type="checkbox"> Joint axes</label><label class="check"><input id="motion-wire" type="checkbox"> Wireframe</label><button id="motion-reset" class="text-button">Reset view ↺</button></div>
+<div class="under-panel"><span id="motion-stats" aria-live="polite">Loading selected result…</span><span>Drag to orbit · scroll to zoom · cameras stay in sync</span></div>
+<p id="motion-source-note" class="source-note">Selected ShapeMind outputs from PhysX-Bench. Both views use the same predicted joint graph and ranges. Playback is a kinematic visualization, not a physics simulation.</p>
+</div></section>
+<section id="geometry" class="section wrap">
+<div class="section-heading"><div><p class="eyebrow">02 / NATIVE GEOMETRY</p><h2>Made of parts.<br>Built with triangles.</h2></div><p>Explore the actual surfaces and topology.<br>Each color is a separate, editable component.</p></div>
+<div class="hand-feature"><div><div id="hand-view" class="viewport" aria-label="Animated existing robotic hand mesh"></div></div><div class="hand-story"><p class="eyebrow">FROM GENERATED PARTS TO ARTICULATION</p><h3>A hand that can grasp.</h3><p>The original 32 meshes become five articulated fingers. Each finger bends around the centers of its generated joints, following a three-joint hierarchy.</p><div class="hand-numbers"><span><strong>32</strong> semantic meshes</span><span><strong>15</strong> rotational joints</span></div><div class="motion-controls"><button id="hand-play" class="small-button" aria-pressed="true">Pause hand</button><label class="check"><input id="hand-wire" type="checkbox"> Wireframe</label><span id="hand-state" role="status" class="hand-state"></span></div><label class="scrub-label" for="hand-progress">Open <input id="hand-progress" type="range" min="0" max="1000" value="0"> Grasp</label><div class="agent-tools"><button id="hand-original" class="text-button">Original generated pose</button><a href="assets/geometry/hand-animated.glb" download class="text-button">Animated GLB ↗</a><a href="assets/videos/robotic-hand-grasp.mp4" download class="text-button">Grasp-loop MP4 ↗</a></div><p class="source-note">Articulation authored on the existing generated geometry. Joint pivots are fitted to the named joint meshes; the original triangles are unchanged.</p></div></div>
+<details class="hand-film"><summary>Watch the hand in motion <span>▷</span></summary><video controls loop muted playsinline preload="none" poster="assets/videos/hand-promo-poster.webp" aria-label="Robotic hand opens and grasps as its triangle topology appears"><source src="assets/videos/made-of-parts-built-with-triangles.mp4" type="video/mp4"></video><p>One continuous render: the generated hand opens and closes, then reveals its original triangle edges.</p></details>
+<div class="gallery-toolbar"><div class="segmented" id="geometry-mode" role="group" aria-label="Geometry display"><button data-mode="parts" aria-pressed="true">Semantic parts</button><button data-mode="wire" aria-pressed="false">True wireframe</button><button data-mode="clay" aria-pressed="false">Clay</button></div><label class="check"><input id="geometry-explode" type="checkbox"> Explode parts</label></div>
+<div id="geometry-grid" class="geometry-grid"></div>
+<p class="source-note">Selected meshes from the supplied Blender gallery. Wireframe follows the original triangle edges; no remeshing or subdivision is applied. Exploded views only translate parts for inspection.</p>
+</section>
+<section id="agents" class="section agent-section"><div class="wrap">
+<div class="section-heading"><div><p class="eyebrow">03 / AGENT-DIRECTED CREATION</p><h2>Understand first.<br>Then generate.</h2></div><p>An agent can speak the same part interface:<br>an image, semantic descriptions, and 3D boxes.</p></div>
+<p class="section-intro">Independent agents design complex objects, generate reference images, plan semantic parts and joint hierarchies, then call Semantic PartGen. The generated components are bound to those agent-authored joints to create articulated assets.</p>
+<div id="agent-tabs" class="tabs" role="group" aria-label="Choose agent example"></div>
+<div class="agent-brief"><span class="eyebrow">DESIGN BRIEF</span><p id="agent-brief"></p><span id="agent-count" class="pill"></span></div>
+<div class="agent-pipeline"><article class="render-panel"><div class="panel-heading"><span class="panel-index">01</span><h3>Imagine</h3></div><div class="reference-stage"><img id="agent-reference" alt="Agent-generated reference image" loading="lazy"></div><div class="panel-caption">Generated reference image</div></article><article class="render-panel"><div class="panel-heading"><span class="panel-index">02</span><h3>Plan the parts</h3></div><div id="agent-boxes" class="viewport" aria-label="Interactive agent-planned 3D bounding boxes"></div><div class="panel-caption">Labels + descriptions + 3D boxes</div></article><article class="render-panel"><div class="panel-heading"><span class="panel-index">03</span><h3>Generate + articulate</h3></div><div id="agent-result" class="viewport" aria-label="Interactive agent-conditioned generated model"></div><div class="panel-caption">Generated meshes + agent-authored joints</div></article></div>
+<div class="motion-controls agent-motion"><button id="agent-play" class="small-button" aria-pressed="true">Pause motion</button><label class="scrub-label" for="agent-progress">Pose <input id="agent-progress" type="range" min="0" max="1000" value="0"><output id="agent-percent">0%</output></label><label class="check"><input id="agent-axes" type="checkbox"> Joint axes</label></div>
+<div class="agent-tools"><label class="check"><input id="agent-explode" type="checkbox"> Explode generated parts</label><label class="check"><input id="agent-wire" type="checkbox"> Wireframe</label><a id="agent-download" class="text-button" download>Download GLB ↗</a><a id="agent-animated-download" class="text-button" download>Animated GLB ↗</a><a id="agent-video-download" class="text-button" download hidden>MP4 ↗</a><a id="agent-plan-download" class="text-button" download>View part plan ↗</a></div>
+<div class="part-inspector"><div><label for="part-select">INSPECT THE AGENT’S PLAN</label><select id="part-select"></select></div><div><p id="part-description"></p><code id="part-bbox"></code></div></div>
+<p id="agent-status" class="source-note" aria-live="polite"></p>
+<p class="source-note">The agent supplies part conditions and the kinematic graph; these examples bypass ShapeVLM. Semantic PartGen generates the meshes. Joints are agent-authored and aligned to the actual output geometry. Playback demonstrates kinematics, not a dynamics simulation.</p>
+</div></section>
+
+</main>
+<footer class="wrap"><a class="wordmark" href="#"><span class="mark" aria-hidden="true">◈</span> ShapeMind</a><p>Think before you generate.</p><a href="#main">Back to top ↑</a></footer>
+<noscript><p class="noscript">Enable JavaScript to explore the interactive 3D results. The overview and paper figures remain available above.</p></noscript>
+</body></html>

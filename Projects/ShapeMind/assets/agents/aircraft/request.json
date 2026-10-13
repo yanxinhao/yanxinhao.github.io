@@ -1,0 +1,206 @@
+{
+  "id": "shapemind_v2_aircraft",
+  "parts": [
+    {
+      "id": "fuselage",
+      "label": "tapered aircraft fuselage",
+      "appearance": "long rounded spindle shaped body with a broad cylindrical front, tapered narrow tail and raised longitudinal ribs, aligned front to back at the center",
+      "bbox": [
+        -0.095,
+        -0.31,
+        -0.07,
+        0.095,
+        0.355,
+        0.1
+      ]
+    },
+    {
+      "id": "engine",
+      "label": "front engine cowling",
+      "appearance": "broad short cylindrical ring with a recessed radial center and thick rounded outer rim, mounted coaxially at the front end of the fuselage",
+      "bbox": [
+        -0.115,
+        -0.405,
+        -0.105,
+        0.115,
+        -0.29,
+        0.125
+      ]
+    },
+    {
+      "id": "propeller",
+      "label": "front two blade propeller",
+      "appearance": "two long tapered oval blades extending in opposite diagonal directions from a round central hub, forming one thin rotating assembly in front of the engine",
+      "bbox": [
+        -0.16,
+        -0.445,
+        -0.185,
+        0.16,
+        -0.405,
+        0.205
+      ]
+    },
+    {
+      "id": "canopy",
+      "label": "cockpit canopy",
+      "appearance": "small curved half dome with a thick curved perimeter rim, raised above the forward upper surface of the fuselage",
+      "bbox": [
+        -0.063,
+        -0.2,
+        0.087,
+        0.063,
+        -0.06,
+        0.18
+      ]
+    },
+    {
+      "id": "inner_wing_left",
+      "label": "left inner wing",
+      "appearance": "short broad flat airfoil panel with rounded leading edge, extending horizontally from the left side of the fuselage to a straight outer hinge seam",
+      "bbox": [
+        -0.19,
+        -0.19,
+        -0.005,
+        -0.082,
+        0.055,
+        0.03
+      ]
+    },
+    {
+      "id": "outer_wing_left",
+      "label": "left folding outer wing",
+      "appearance": "long tapered airfoil panel with rounded outer tip and raised transverse ribs, extending laterally from a straight inner hinge seam on the left side",
+      "bbox": [
+        -0.5,
+        -0.185,
+        -0.004,
+        -0.19,
+        0.055,
+        0.032
+      ]
+    },
+    {
+      "id": "tailplane_left",
+      "label": "left horizontal tailplane",
+      "appearance": "small thin tapered horizontal airfoil with a rounded outer end, attached laterally near the tail of the fuselage",
+      "bbox": [
+        -0.215,
+        0.215,
+        0.018,
+        -0.025,
+        0.355,
+        0.043
+      ]
+    },
+    {
+      "id": "landing_strut_left",
+      "label": "left landing strut",
+      "appearance": "short sturdy cylindrical telescoping strut sloping downward and outward, joining the underside of the front fuselage to the left wheel hub",
+      "bbox": [
+        -0.16,
+        -0.28,
+        -0.195,
+        -0.065,
+        -0.175,
+        -0.065
+      ]
+    },
+    {
+      "id": "wheel_left",
+      "label": "left landing wheel",
+      "appearance": "thick upright circular tire with a recessed round hub and narrow concentric side rings, mounted at the lower end of the left landing strut with its axle running left to right",
+      "bbox": [
+        -0.203,
+        -0.3,
+        -0.265,
+        -0.127,
+        -0.16,
+        -0.125
+      ]
+    },
+    {
+      "id": "inner_wing_right",
+      "label": "right inner wing",
+      "appearance": "short broad flat airfoil panel with rounded leading edge, extending horizontally from the right side of the fuselage to a straight outer hinge seam",
+      "bbox": [
+        0.082,
+        -0.19,
+        -0.005,
+        0.19,
+        0.055,
+        0.03
+      ]
+    },
+    {
+      "id": "outer_wing_right",
+      "label": "right folding outer wing",
+      "appearance": "long tapered airfoil panel with rounded outer tip and raised transverse ribs, extending laterally from a straight inner hinge seam on the right side",
+      "bbox": [
+        0.19,
+        -0.185,
+        -0.004,
+        0.5,
+        0.055,
+        0.032
+      ]
+    },
+    {
+      "id": "tailplane_right",
+      "label": "right horizontal tailplane",
+      "appearance": "small thin tapered horizontal airfoil with a rounded outer end, attached laterally near the tail of the fuselage",
+      "bbox": [
+        0.025,
+        0.215,
+        0.018,
+        0.215,
+        0.355,
+        0.043
+      ]
+    },
+    {
+      "id": "landing_strut_right",
+      "label": "right landing strut",
+      "appearance": "short sturdy cylindrical telescoping strut sloping downward and outward, joining the underside of the front fuselage to the right wheel hub",
+      "bbox": [
+        0.065,
+        -0.28,
+        -0.195,
+        0.16,
+        -0.175,
+        -0.065
+      ]
+    },
+    {
+      "id": "wheel_right",
+      "label": "right landing wheel",
+      "appearance": "thick upright circular tire with a recessed round hub and narrow concentric side rings, mounted at the lower end of the right landing strut with its axle running left to right",
+      "bbox": [
+        0.127,
+        -0.3,
+        -0.265,
+        0.203,
+        -0.16,
+        -0.125
+      ]
+    },
+    {
+      "id": "rudder",
+      "label": "vertical tail rudder",
+      "appearance": "tall thin upright fin with rounded swept leading edge and straighter trailing edge, rising vertically from the rear center of the fuselage",
+      "bbox": [
+        -0.016,
+        0.215,
+        0.032,
+        0.016,
+        0.363,
+        0.235
+      ]
+    }
+  ],
+  "rotation_index": 0,
+  "object_num_vertices": 3600,
+  "seed": 44,
+  "explode": 0,
+  "return_glb": false,
+  "object_description": "Agent-designed ornate mechanical aircraft with separately hinged outer wings, propeller, rudder, tailplanes and landing wheels."
+}

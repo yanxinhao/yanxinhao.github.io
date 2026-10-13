@@ -1,0 +1,100 @@
+{
+  "id": "shapemind_agent_vintage_cabinet",
+  "rotation_index": 0,
+  "object_num_vertices": 2500,
+  "parts": [
+    {
+      "id": "cabinet_body",
+      "label": "cabinet body",
+      "appearance": "hollow rectangular box with thick flat top and bottom panels, vertical side walls and a back panel, open toward the front, with a horizontal divider at upper mid height",
+      "bbox": [
+        -0.42,
+        -0.28,
+        -0.24,
+        0.42,
+        0.34,
+        0.5
+      ]
+    },
+    {
+      "id": "drawer_front",
+      "label": "upper drawer front",
+      "appearance": "wide thin rectangular panel with slightly softened edges, mounted vertically across the upper front opening of the cabinet",
+      "bbox": [
+        -0.375,
+        -0.292,
+        0.17,
+        0.375,
+        -0.23,
+        0.445
+      ]
+    },
+    {
+      "id": "knob",
+      "label": "drawer round knob",
+      "appearance": "small round cylindrical knob with a broad circular face and short narrow stem, projecting forward from the center of the upper drawer front",
+      "bbox": [
+        -0.04,
+        -0.34,
+        0.27,
+        0.04,
+        -0.27,
+        0.345
+      ]
+    },
+    {
+      "id": "front_left_leg",
+      "label": "front left leg",
+      "appearance": "tapered cylindrical post with rounded flat foot, splaying slightly outward and extending down from the front left corner of the cabinet bottom",
+      "bbox": [
+        -0.385,
+        -0.28,
+        -0.5,
+        -0.25,
+        -0.16,
+        -0.22
+      ]
+    },
+    {
+      "id": "rear_left_leg",
+      "label": "rear left leg",
+      "appearance": "tapered cylindrical post with rounded flat foot, splaying slightly outward and extending down from the rear left corner of the cabinet bottom",
+      "bbox": [
+        -0.385,
+        0.18,
+        -0.5,
+        -0.25,
+        0.31,
+        -0.22
+      ]
+    },
+    {
+      "id": "front_right_leg",
+      "label": "front right leg",
+      "appearance": "tapered cylindrical post with rounded flat foot, splaying slightly outward and extending down from the front right corner of the cabinet bottom",
+      "bbox": [
+        0.25,
+        -0.28,
+        -0.5,
+        0.385,
+        -0.16,
+        -0.22
+      ]
+    },
+    {
+      "id": "rear_right_leg",
+      "label": "rear right leg",
+      "appearance": "tapered cylindrical post with rounded flat foot, splaying slightly outward and extending down from the rear right corner of the cabinet bottom",
+      "bbox": [
+        0.25,
+        0.18,
+        -0.5,
+        0.385,
+        0.31,
+        -0.22
+      ]
+    }
+  ],
+  "return_glb": false,
+  "explode": 0
+}

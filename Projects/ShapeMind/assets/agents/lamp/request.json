@@ -1,0 +1,76 @@
+{
+  "id": "homepage_pivot_task_lamp",
+  "rotation_index": 0,
+  "object_num_vertices": 2400,
+  "seed": 42,
+  "explode": 0,
+  "return_glb": false,
+  "object_description": "Agent-designed modern pivot task lamp. Five visible structural parts planned from an AI-generated transparent reference image.",
+  "parts": [
+    {
+      "id": "base",
+      "label": "lower circular base",
+      "appearance": "broad low cylindrical disk with rounded outer edges and a flat top, positioned horizontally beneath the upright stem on the left",
+      "bbox": [
+        -0.325,
+        -0.197,
+        -0.5,
+        0.075,
+        0.197,
+        -0.39
+      ]
+    },
+    {
+      "id": "stem",
+      "label": "left upright stem",
+      "appearance": "long straight vertical cylindrical post of constant circular cross-section, rising from the center of the round base to the upper hinge",
+      "bbox": [
+        -0.172,
+        -0.035,
+        -0.4,
+        -0.11,
+        0.035,
+        0.207
+      ]
+    },
+    {
+      "id": "hinge",
+      "label": "upper circular hinge",
+      "appearance": "short thick cylindrical joint with a broad circular front face, centered on the top of the upright stem and joining the inclined arm",
+      "bbox": [
+        -0.185,
+        -0.055,
+        0.175,
+        -0.095,
+        0.055,
+        0.262
+      ]
+    },
+    {
+      "id": "arm",
+      "label": "upper right inclined arm",
+      "appearance": "short thick straight cylindrical rod rising diagonally to the right from the upper hinge to the narrow upper end of the lampshade",
+      "bbox": [
+        -0.139,
+        -0.03,
+        0.225,
+        0.1,
+        0.035,
+        0.432
+      ]
+    },
+    {
+      "id": "shade",
+      "label": "upper right conical lampshade",
+      "appearance": "large hollow truncated-conical shell flaring downward to a broad circular open rim, with a short cylindrical neck at its narrow top, positioned at the right end of the inclined arm",
+      "bbox": [
+        0.006,
+        -0.165,
+        0.145,
+        0.325,
+        0.165,
+        0.5
+      ]
+    }
+  ]
+}

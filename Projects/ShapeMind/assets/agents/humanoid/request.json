@@ -1,0 +1,308 @@
+{
+  "id": "shapemind_agent_v2_humanoid",
+  "rotation_index": 0,
+  "object_num_vertices": 6800,
+  "parts": [
+    {
+      "id": "head",
+      "label": "robot head",
+      "appearance": "rounded rectangular head shell with a broad gently convex front face panel and circular inset side disks, centered above a short neck",
+      "bbox": [
+        -0.07,
+        -0.067,
+        0.365,
+        0.07,
+        0.065,
+        0.5
+      ]
+    },
+    {
+      "id": "neck",
+      "label": "neck column",
+      "appearance": "short vertically stacked cylindrical column with a wide lower ring, connecting the underside of the head to the top center of the torso",
+      "bbox": [
+        -0.036,
+        -0.028,
+        0.328,
+        0.036,
+        0.032,
+        0.372
+      ]
+    },
+    {
+      "id": "torso",
+      "label": "chest torso",
+      "appearance": "broad rounded trapezoidal shell with sloping shoulders, a gently convex chest and a narrowed lower edge, centered in the upper body",
+      "bbox": [
+        -0.11,
+        -0.063,
+        0.148,
+        0.11,
+        0.073,
+        0.343
+      ]
+    },
+    {
+      "id": "waist",
+      "label": "waist connector",
+      "appearance": "short tapered stacked polygonal column with an angular front plate, connecting the narrow torso base to the pelvis",
+      "bbox": [
+        -0.061,
+        -0.05,
+        0.085,
+        0.061,
+        0.058,
+        0.18
+      ]
+    },
+    {
+      "id": "pelvis",
+      "label": "pelvis shell",
+      "appearance": "compact rounded basin-shaped shell with a wide upper rim, curved front and two lateral circular hip sockets",
+      "bbox": [
+        -0.085,
+        -0.067,
+        0.015,
+        0.085,
+        0.058,
+        0.115
+      ]
+    },
+    {
+      "id": "left_shoulder",
+      "label": "left shoulder hub",
+      "appearance": "rounded spherical joint enclosed by a curved outer cap, projecting laterally from the left upper corner of the torso",
+      "bbox": [
+        -0.163,
+        -0.045,
+        0.252,
+        -0.105,
+        0.06,
+        0.319
+      ]
+    },
+    {
+      "id": "left_upperarm",
+      "label": "left upper arm",
+      "appearance": "elongated gently tapered shell with a rounded rectangular cross section, angling slightly outward and downward from the left shoulder to the elbow",
+      "bbox": [
+        -0.184,
+        -0.044,
+        0.167,
+        -0.125,
+        0.046,
+        0.266
+      ]
+    },
+    {
+      "id": "left_elbow",
+      "label": "left elbow hub",
+      "appearance": "short thick cylindrical joint with broad round side caps, placed horizontally between the left upper arm and forearm",
+      "bbox": [
+        -0.193,
+        -0.035,
+        0.125,
+        -0.147,
+        0.048,
+        0.178
+      ]
+    },
+    {
+      "id": "left_forearm",
+      "label": "left forearm",
+      "appearance": "long tapered curved shell widening near the elbow and narrowing at the wrist, descending slightly outward along the left lower arm",
+      "bbox": [
+        -0.213,
+        -0.043,
+        -0.006,
+        -0.16,
+        0.046,
+        0.135
+      ]
+    },
+    {
+      "id": "left_hand",
+      "label": "left hand",
+      "appearance": "compact hand with a rounded rectangular palm, four short segmented curled fingers and one opposed thumb, hanging below the left wrist",
+      "bbox": [
+        -0.225,
+        -0.052,
+        -0.1,
+        -0.177,
+        0.044,
+        0.012
+      ]
+    },
+    {
+      "id": "left_thigh",
+      "label": "left thigh",
+      "appearance": "long slightly tapered rounded shell with a broad upper circular hip attachment and narrowed lower knee opening, descending from the left side of the pelvis",
+      "bbox": [
+        -0.108,
+        -0.056,
+        -0.152,
+        -0.035,
+        0.062,
+        0.065
+      ]
+    },
+    {
+      "id": "left_knee",
+      "label": "left knee hub",
+      "appearance": "large round cylindrical joint with domed side caps, connecting the left thigh to the shin at mid leg height",
+      "bbox": [
+        -0.106,
+        -0.057,
+        -0.199,
+        -0.039,
+        0.054,
+        -0.137
+      ]
+    },
+    {
+      "id": "left_shin",
+      "label": "left lower leg",
+      "appearance": "long smoothly tapered shell with a convex front and a narrowed ankle opening, descending vertically below the left knee",
+      "bbox": [
+        -0.106,
+        -0.051,
+        -0.409,
+        -0.035,
+        0.056,
+        -0.19
+      ]
+    },
+    {
+      "id": "left_foot",
+      "label": "left foot",
+      "appearance": "broad low rounded rectangular foot projecting forward with a thick flat sole and a raised cylindrical ankle at the rear",
+      "bbox": [
+        -0.117,
+        -0.113,
+        -0.5,
+        -0.028,
+        0.059,
+        -0.398
+      ]
+    },
+    {
+      "id": "right_shoulder",
+      "label": "right shoulder hub",
+      "appearance": "rounded spherical joint enclosed by a curved outer cap, projecting laterally from the right upper corner of the torso",
+      "bbox": [
+        0.105,
+        -0.045,
+        0.252,
+        0.163,
+        0.06,
+        0.319
+      ]
+    },
+    {
+      "id": "right_upperarm",
+      "label": "right upper arm",
+      "appearance": "elongated gently tapered shell with a rounded rectangular cross section, angling slightly outward and downward from the right shoulder to the elbow",
+      "bbox": [
+        0.125,
+        -0.044,
+        0.167,
+        0.184,
+        0.046,
+        0.266
+      ]
+    },
+    {
+      "id": "right_elbow",
+      "label": "right elbow hub",
+      "appearance": "short thick cylindrical joint with broad round side caps, placed horizontally between the right upper arm and forearm",
+      "bbox": [
+        0.147,
+        -0.035,
+        0.125,
+        0.193,
+        0.048,
+        0.178
+      ]
+    },
+    {
+      "id": "right_forearm",
+      "label": "right forearm",
+      "appearance": "long tapered curved shell widening near the elbow and narrowing at the wrist, descending slightly outward along the right lower arm",
+      "bbox": [
+        0.16,
+        -0.043,
+        -0.006,
+        0.213,
+        0.046,
+        0.135
+      ]
+    },
+    {
+      "id": "right_hand",
+      "label": "right hand",
+      "appearance": "compact hand with a rounded rectangular palm, four short segmented curled fingers and one opposed thumb, hanging below the right wrist",
+      "bbox": [
+        0.177,
+        -0.052,
+        -0.1,
+        0.225,
+        0.044,
+        0.012
+      ]
+    },
+    {
+      "id": "right_thigh",
+      "label": "right thigh",
+      "appearance": "long slightly tapered rounded shell with a broad upper circular hip attachment and narrowed lower knee opening, descending from the right side of the pelvis",
+      "bbox": [
+        0.035,
+        -0.056,
+        -0.152,
+        0.108,
+        0.062,
+        0.065
+      ]
+    },
+    {
+      "id": "right_knee",
+      "label": "right knee hub",
+      "appearance": "large round cylindrical joint with domed side caps, connecting the right thigh to the shin at mid leg height",
+      "bbox": [
+        0.039,
+        -0.057,
+        -0.199,
+        0.106,
+        0.054,
+        -0.137
+      ]
+    },
+    {
+      "id": "right_shin",
+      "label": "right lower leg",
+      "appearance": "long smoothly tapered shell with a convex front and a narrowed ankle opening, descending vertically below the right knee",
+      "bbox": [
+        0.035,
+        -0.051,
+        -0.409,
+        0.106,
+        0.056,
+        -0.19
+      ]
+    },
+    {
+      "id": "right_foot",
+      "label": "right foot",
+      "appearance": "broad low rounded rectangular foot projecting forward with a thick flat sole and a raised cylindrical ankle at the rear",
+      "bbox": [
+        0.028,
+        -0.113,
+        -0.5,
+        0.117,
+        0.059,
+        -0.398
+      ]
+    }
+  ],
+  "return_glb": false,
+  "explode": 0
+}

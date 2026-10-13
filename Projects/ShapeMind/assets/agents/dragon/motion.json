@@ -1,0 +1,427 @@
+{
+  "frame": "normalized_zup",
+  "provenance": "agent-authored articulation plan",
+  "alignment": "Pivots checked against actual generated mesh AABBs in normalized Z-up. See rig_alignment.json and actual_bounds.json. Render conversion to raw GLB is (2*x, 2*z, -2*y); rotation axes use (x,z,-y) without scale.",
+  "joints": [
+    {
+      "id": "body",
+      "parent": null,
+      "type": "fixed",
+      "parts": [
+        "torso"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0.0,
+        -0.019976,
+        -3.6e-05
+      ],
+      "range": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "neck",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "neck"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.0,
+        -0.140102,
+        0.014863
+      ],
+      "range": [
+        -3,
+        3
+      ]
+    },
+    {
+      "id": "head",
+      "parent": "neck",
+      "type": "revolute",
+      "parts": [
+        "head",
+        "horn_left",
+        "horn_right"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.0,
+        -0.284979,
+        0.284982
+      ],
+      "range": [
+        -4,
+        4
+      ]
+    },
+    {
+      "id": "jaw",
+      "parent": "head",
+      "type": "revolute",
+      "parts": [
+        "jaw"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.0,
+        -0.290125,
+        0.245117
+      ],
+      "range": [
+        -5,
+        5
+      ]
+    },
+    {
+      "id": "wing_left",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "wing_left_inner"
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "pivot": [
+        -0.114563,
+        -0.024929,
+        0.039779
+      ],
+      "range": [
+        -8,
+        8
+      ]
+    },
+    {
+      "id": "wing_left_outer",
+      "parent": "wing_left",
+      "type": "revolute",
+      "parts": [
+        "wing_left_outer"
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "pivot": [
+        -0.259087,
+        0.024981,
+        0.274992
+      ],
+      "range": [
+        -5,
+        5
+      ]
+    },
+    {
+      "id": "wing_right",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "wing_right_inner"
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "pivot": [
+        0.114929,
+        -0.024929,
+        0.039779
+      ],
+      "range": [
+        -8,
+        8
+      ]
+    },
+    {
+      "id": "wing_right_outer",
+      "parent": "wing_right",
+      "type": "revolute",
+      "parts": [
+        "wing_right_outer"
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "pivot": [
+        0.259087,
+        0.024981,
+        0.274992
+      ],
+      "range": [
+        -5,
+        5
+      ]
+    },
+    {
+      "id": "tail_root",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "tail_root"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0.000214,
+        0.170105,
+        -0.099966
+      ],
+      "range": [
+        -5,
+        5
+      ]
+    },
+    {
+      "id": "tail_middle",
+      "parent": "tail_root",
+      "type": "revolute",
+      "parts": [
+        "tail_middle"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0.044932,
+        0.295031,
+        -0.089945
+      ],
+      "range": [
+        -5,
+        5
+      ]
+    },
+    {
+      "id": "tail_tip",
+      "parent": "tail_middle",
+      "type": "revolute",
+      "parts": [
+        "tail_tip"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.104762,
+        0.41507,
+        -0.04494
+      ],
+      "range": [
+        -5,
+        5
+      ]
+    },
+    {
+      "id": "leg_front_left",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "leg_front_left_upper"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.114438,
+        -0.125053,
+        -0.125
+      ],
+      "range": [
+        -3,
+        3
+      ]
+    },
+    {
+      "id": "leg_front_left_knee",
+      "parent": "leg_front_left",
+      "type": "revolute",
+      "parts": [
+        "leg_front_left_lower"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.164777,
+        -0.125244,
+        -0.259888
+      ],
+      "range": [
+        -4,
+        4
+      ]
+    },
+    {
+      "id": "leg_rear_left",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "leg_rear_left_upper"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.114624,
+        0.135064,
+        -0.124878
+      ],
+      "range": [
+        -3,
+        3
+      ]
+    },
+    {
+      "id": "leg_rear_left_knee",
+      "parent": "leg_rear_left",
+      "type": "revolute",
+      "parts": [
+        "leg_rear_left_lower"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.164865,
+        0.134935,
+        -0.260233
+      ],
+      "range": [
+        -4,
+        4
+      ]
+    },
+    {
+      "id": "leg_front_right",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "leg_front_right_upper"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.114438,
+        -0.125053,
+        -0.125
+      ],
+      "range": [
+        -3,
+        3
+      ]
+    },
+    {
+      "id": "leg_front_right_knee",
+      "parent": "leg_front_right",
+      "type": "revolute",
+      "parts": [
+        "leg_front_right_lower"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.164234,
+        -0.125244,
+        -0.259888
+      ],
+      "range": [
+        -4,
+        4
+      ]
+    },
+    {
+      "id": "leg_rear_right",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "leg_rear_right_upper"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.114624,
+        0.135064,
+        -0.124878
+      ],
+      "range": [
+        -3,
+        3
+      ]
+    },
+    {
+      "id": "leg_rear_right_knee",
+      "parent": "leg_rear_right",
+      "type": "revolute",
+      "parts": [
+        "leg_rear_right_lower"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.164481,
+        0.134935,
+        -0.260233
+      ],
+      "range": [
+        -4,
+        4
+      ]
+    }
+  ]
+}

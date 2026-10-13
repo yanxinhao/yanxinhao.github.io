@@ -1,0 +1,56 @@
+[
+  {
+    "id": "humanoid",
+    "title": "Service Humanoid",
+    "brief": "Design a service robot with an articulated head, independently jointed arms and legs, and clearly separated mechanical components.",
+    "camera": [
+      56,
+      48,
+      115
+    ],
+    "parts": 23,
+    "exported": 23,
+    "vertices": 8160,
+    "faces": 16009,
+    "joints": 9,
+    "animated": true,
+    "video": true,
+    "note": "Agent-authored kinematic graph, aligned to the generated part meshes."
+  },
+  {
+    "id": "aircraft",
+    "title": "Folding-wing Aircraft",
+    "brief": "Design an ornate mechanical aircraft with folding outer wings, a propeller, control surfaces and landing wheels.",
+    "camera": [
+      56,
+      48,
+      115
+    ],
+    "parts": 15,
+    "exported": 15,
+    "vertices": 3902,
+    "faces": 6893,
+    "joints": 8,
+    "animated": true,
+    "video": true,
+    "note": "Agent-authored kinematic graph, aligned to the generated part meshes."
+  },
+  {
+    "id": "robot_arm",
+    "title": "Industrial Robot Arm",
+    "brief": "Design an industrial manipulator with a rotating base, articulated links, a wrist and two opposing gripper jaws.",
+    "camera": [
+      56,
+      48,
+      115
+    ],
+    "parts": 12,
+    "exported": 12,
+    "vertices": 6392,
+    "faces": 12614,
+    "joints": 6,
+    "animated": true,
+    "video": true,
+    "note": "Agent-authored kinematic graph, aligned to the generated part meshes."
+  }
+]

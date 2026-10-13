@@ -1,0 +1,77 @@
+[
+  {
+    "id": "robot",
+    "title": "Expressive robot",
+    "parts": 29,
+    "vertices": 4886,
+    "faces": 9468,
+    "source": "all_ours_compact_realwire.blend",
+    "collection": "Redraw FT38k | testset25/comic/0428237d-7df6-458d-803f-8539d4ec32bb",
+    "frame": "Y-up, uniformly centered and scaled for display; original topology"
+  },
+  {
+    "id": "hand",
+    "title": "Robotic hand",
+    "parts": 32,
+    "vertices": 3415,
+    "faces": 6682,
+    "source": "all_ours_compact_realwire.blend",
+    "collection": "Redraw FT38k | testset25/realistic/5421ec9f-aa6b-433a-943e-22664aeae4fc",
+    "frame": "Y-up, uniformly centered and scaled for display; original topology"
+  },
+  {
+    "id": "camper",
+    "title": "Expedition camper",
+    "parts": 28,
+    "vertices": 7919,
+    "faces": 16012,
+    "source": "all_ours_compact_realwire.blend",
+    "collection": "Tiny197 | e56ee981a9504153b98e707d6e9c757c",
+    "frame": "Y-up, uniformly centered and scaled for display; original topology",
+    "camera": [
+      100,
+      45,
+      85
+    ]
+  },
+  {
+    "id": "pavilion",
+    "title": "Traditional pavilion",
+    "parts": 27,
+    "vertices": 5068,
+    "faces": 9086,
+    "source": "all_ours_compact_realwire.blend",
+    "collection": "Tiny197 | 01fe14f50de443e4b11ad1fe033df666",
+    "frame": "Y-up, uniformly centered and scaled for display; original topology",
+    "camera": [
+      75,
+      35,
+      110
+    ]
+  },
+  {
+    "id": "arm",
+    "title": "Industrial arm",
+    "parts": 10,
+    "vertices": 11813,
+    "faces": 23438,
+    "source": "all_ours_compact_realwire.blend",
+    "collection": "Tiny197 | 9e7856dd34ae444a934499782c5bd606",
+    "frame": "Y-up, uniformly centered and scaled for display; original topology"
+  },
+  {
+    "id": "walker",
+    "title": "Mechanical walker",
+    "parts": 18,
+    "vertices": 5560,
+    "faces": 9379,
+    "source": "all_ours_compact_realwire.blend",
+    "collection": "Tiny197 | b7fce3003d95479a9226f7cb639df893",
+    "frame": "Y-up, uniformly centered and scaled for display; original topology",
+    "camera": [
+      56,
+      48,
+      115
+    ]
+  }
+]

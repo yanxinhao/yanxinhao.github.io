@@ -1,0 +1,214 @@
+{
+  "frame": "normalized_zup",
+  "provenance": "agent-authored articulation plan",
+  "angle_units": "degrees",
+  "translation_units": "normalized",
+  "joints": [
+    {
+      "id": "airframe",
+      "parent": null,
+      "type": "fixed",
+      "parts": [
+        "fuselage",
+        "engine",
+        "canopy",
+        "inner_wing_left",
+        "inner_wing_right",
+        "landing_strut_left",
+        "landing_strut_right"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0.0,
+        -2.4e-05,
+        -0.000101
+      ],
+      "range": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "propeller_spin",
+      "parent": "airframe",
+      "type": "revolute",
+      "parts": [
+        "propeller"
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "pivot": [
+        0.0,
+        -0.424048,
+        0.01001
+      ],
+      "range": [
+        0,
+        360
+      ]
+    },
+    {
+      "id": "left_wing_fold",
+      "parent": "airframe",
+      "type": "revolute",
+      "parts": [
+        "outer_wing_left"
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "pivot": [
+        -0.189209,
+        -0.064941,
+        0.013916
+      ],
+      "range": [
+        0,
+        26
+      ]
+    },
+    {
+      "id": "right_wing_fold",
+      "parent": "airframe",
+      "type": "revolute",
+      "parts": [
+        "outer_wing_right"
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "pivot": [
+        0.189209,
+        -0.064941,
+        0.013916
+      ],
+      "range": [
+        -26,
+        0
+      ]
+    },
+    {
+      "id": "rudder_yaw",
+      "parent": "airframe",
+      "type": "revolute",
+      "parts": [
+        "rudder"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0.0,
+        0.270069,
+        0.029981
+      ],
+      "range": [
+        -18,
+        18
+      ]
+    },
+    {
+      "id": "tail_left",
+      "parent": "airframe",
+      "type": "revolute",
+      "parts": [
+        "tailplane_left"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.059956,
+        0.284912,
+        0.028994
+      ],
+      "range": [
+        -9,
+        9
+      ]
+    },
+    {
+      "id": "wheel_left",
+      "parent": "airframe",
+      "type": "revolute",
+      "parts": [
+        "wheel_left"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.165039,
+        -0.22998,
+        -0.194824
+      ],
+      "range": [
+        0,
+        360
+      ]
+    },
+    {
+      "id": "tail_right",
+      "parent": "airframe",
+      "type": "revolute",
+      "parts": [
+        "tailplane_right"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.059557,
+        0.284912,
+        0.028994
+      ],
+      "range": [
+        -9,
+        9
+      ]
+    },
+    {
+      "id": "wheel_right",
+      "parent": "airframe",
+      "type": "revolute",
+      "parts": [
+        "wheel_right"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.164551,
+        -0.22998,
+        -0.194824
+      ],
+      "range": [
+        0,
+        360
+      ]
+    }
+  ],
+  "alignment": "Pivots checked against actual generated mesh AABBs in normalized Z-up. See rig_alignment.json and actual_bounds.json. Render conversion to raw GLB is (2*x, 2*z, -2*y); rotation axes use (x,z,-y) without scale.",
+  "visual_review": "Neutral and quarter-cycle renders reviewed: both outer wing hinges fold upward, the front propeller rotates about the radial-engine center, rudder and horizontal tailplanes deflect, and both landing wheels roll. Conservative original ranges retained; generated geometry unchanged."
+}

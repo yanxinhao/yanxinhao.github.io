@@ -1,0 +1,188 @@
+{
+  "model": "ft-tristream-30w S1/S2 step-100000 EMA",
+  "request_id": "20261008T110420Z_shapemind_agent_cart_20261008_e8ea6dfa",
+  "frame": "gltf_yup",
+  "elapsed_s": 268.2,
+  "exported_parts": 11,
+  "requested_parts": 11,
+  "total_vertices": 2725,
+  "total_faces": 5111,
+  "parts": [
+    {
+      "index": 0,
+      "id": "upper_tray",
+      "label": "upper rectangular tray",
+      "vertices": 312,
+      "faces": 588,
+      "exported": true,
+      "node": "upper_tray__upper_rectangular_tray",
+      "color_rgba": [
+        237,
+        42,
+        42,
+        255
+      ],
+      "color_hex": "#ED2A2A"
+    },
+    {
+      "index": 1,
+      "id": "lower_tray",
+      "label": "lower rectangular tray",
+      "vertices": 316,
+      "faces": 605,
+      "exported": true,
+      "node": "lower_tray__lower_rectangular_tray",
+      "color_rgba": [
+        198,
+        115,
+        16,
+        255
+      ],
+      "color_hex": "#C67310"
+    },
+    {
+      "index": 2,
+      "id": "post_front_left",
+      "label": "front left corner post",
+      "vertices": 146,
+      "faces": 270,
+      "exported": true,
+      "node": "post_front_left__front_left_corner_post",
+      "color_rgba": [
+        220,
+        237,
+        42,
+        255
+      ],
+      "color_hex": "#DCED2A"
+    },
+    {
+      "index": 3,
+      "id": "post_rear_left",
+      "label": "rear left corner post",
+      "vertices": 150,
+      "faces": 278,
+      "exported": true,
+      "node": "post_rear_left__rear_left_corner_post",
+      "color_rgba": [
+        82,
+        198,
+        16,
+        255
+      ],
+      "color_hex": "#52C610"
+    },
+    {
+      "index": 4,
+      "id": "post_front_right",
+      "label": "front right corner post",
+      "vertices": 168,
+      "faces": 312,
+      "exported": true,
+      "node": "post_front_right__front_right_corner_post",
+      "color_rgba": [
+        42,
+        237,
+        78,
+        255
+      ],
+      "color_hex": "#2AED4E"
+    },
+    {
+      "index": 5,
+      "id": "post_rear_right",
+      "label": "rear right corner post",
+      "vertices": 168,
+      "faces": 312,
+      "exported": true,
+      "node": "post_rear_right__rear_right_corner_post",
+      "color_rgba": [
+        16,
+        198,
+        148,
+        255
+      ],
+      "color_hex": "#10C694"
+    },
+    {
+      "index": 6,
+      "id": "wheel_front_left",
+      "label": "front left caster wheel",
+      "vertices": 310,
+      "faces": 578,
+      "exported": true,
+      "node": "wheel_front_left__front_left_caster_wheel",
+      "color_rgba": [
+        42,
+        184,
+        237,
+        255
+      ],
+      "color_hex": "#2AB8ED"
+    },
+    {
+      "index": 7,
+      "id": "wheel_rear_left",
+      "label": "rear left caster wheel",
+      "vertices": 309,
+      "faces": 576,
+      "exported": true,
+      "node": "wheel_rear_left__rear_left_caster_wheel",
+      "color_rgba": [
+        16,
+        49,
+        198,
+        255
+      ],
+      "color_hex": "#1031C6"
+    },
+    {
+      "index": 8,
+      "id": "wheel_front_right",
+      "label": "front right caster wheel",
+      "vertices": 323,
+      "faces": 604,
+      "exported": true,
+      "node": "wheel_front_right__front_right_caster_wheel",
+      "color_rgba": [
+        113,
+        42,
+        237,
+        255
+      ],
+      "color_hex": "#712AED"
+    },
+    {
+      "index": 9,
+      "id": "wheel_rear_right",
+      "label": "rear right caster wheel",
+      "vertices": 323,
+      "faces": 604,
+      "exported": true,
+      "node": "wheel_rear_right__rear_right_caster_wheel",
+      "color_rgba": [
+        181,
+        16,
+        198,
+        255
+      ],
+      "color_hex": "#B510C6"
+    },
+    {
+      "index": 10,
+      "id": "push_handle",
+      "label": "right end push handle",
+      "vertices": 200,
+      "faces": 384,
+      "exported": true,
+      "node": "push_handle__right_end_push_handle",
+      "color_rgba": [
+        237,
+        42,
+        149,
+        255
+      ],
+      "color_hex": "#ED2A95"
+    }
+  ]
+}

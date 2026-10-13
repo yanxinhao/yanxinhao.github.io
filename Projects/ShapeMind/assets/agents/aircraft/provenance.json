@@ -1,0 +1,20 @@
+{
+  "model": "ft-tristream-30w S1/S2 step-100000 EMA",
+  "request_id": "20261008T123908Z_shapemind_v2_aircraft_6e8bfe12",
+  "frame": "gltf_yup",
+  "elapsed_s": 265.3,
+  "exported_parts": 15,
+  "requested_parts": 15,
+  "total_vertices": 3902,
+  "total_faces": 6893,
+  "rig_source": "agent-authored articulation plan",
+  "display_transform": {
+    "original_glb_center_yup": [
+      0.0,
+      -0.02978515625,
+      0.08203125
+    ],
+    "uniform_display_scale": 32.14124570868073,
+    "plan_to_glb_scale": 2
+  }
+}

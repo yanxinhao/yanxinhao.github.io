@@ -1,0 +1,166 @@
+{
+  "frame": "normalized_zup",
+  "provenance": "agent-authored articulation plan",
+  "alignment": "Pivots checked against actual generated mesh AABBs in normalized Z-up. See rig_alignment.json and actual_bounds.json. Render conversion to raw GLB is (2*x, 2*z, -2*y); rotation axes use (x,z,-y) without scale. Visual inspection: shoulder mesh includes a lower stationary mounting cheek, so it is attached to yaw; only upper_arm rotates about the shoulder axis.",
+  "joints": [
+    {
+      "id": "base",
+      "parent": null,
+      "type": "fixed",
+      "parts": [
+        "base",
+        "pedestal"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        -0.299072,
+        0.0,
+        -0.349854
+      ],
+      "range": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "yaw",
+      "parent": "base",
+      "type": "revolute",
+      "parts": [
+        "turret",
+        "shoulder"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        -0.299072,
+        0.0,
+        -0.149902
+      ],
+      "range": [
+        -15,
+        15
+      ]
+    },
+    {
+      "id": "shoulder",
+      "parent": "yaw",
+      "type": "revolute",
+      "parts": [
+        "upper_arm"
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "pivot": [
+        -0.298828,
+        0.0,
+        0.014968
+      ],
+      "range": [
+        -6,
+        6
+      ]
+    },
+    {
+      "id": "elbow",
+      "parent": "shoulder",
+      "type": "revolute",
+      "parts": [
+        "elbow",
+        "forearm"
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "pivot": [
+        0.099609,
+        0.0,
+        0.274902
+      ],
+      "range": [
+        -8,
+        8
+      ]
+    },
+    {
+      "id": "wrist",
+      "parent": "elbow",
+      "type": "revolute",
+      "parts": [
+        "wrist",
+        "flange",
+        "palm"
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "pivot": [
+        0.364258,
+        0.0,
+        0.02417
+      ],
+      "range": [
+        -8,
+        8
+      ]
+    },
+    {
+      "id": "jaw_left",
+      "parent": "wrist",
+      "type": "prismatic",
+      "parts": [
+        "jaw_left"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.378174,
+        0.0,
+        -0.149902
+      ],
+      "range": [
+        -0.012,
+        0
+      ]
+    },
+    {
+      "id": "jaw_right",
+      "parent": "wrist",
+      "type": "prismatic",
+      "parts": [
+        "jaw_right"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.475372,
+        0.0,
+        -0.150024
+      ],
+      "range": [
+        0,
+        0.012
+      ]
+    }
+  ]
+}

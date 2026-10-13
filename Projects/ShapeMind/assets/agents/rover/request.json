@@ -1,0 +1,297 @@
+{
+  "id": "shapemind_v2_rover",
+  "parts": [
+    {
+      "id": "body",
+      "label": "central rover chassis and raised deck",
+      "appearance": "elongated chamfered rectangular box with a slightly raised trapezoidal top panel, positioned horizontally at the center above the six wheels",
+      "bbox": [
+        -0.18,
+        -0.27,
+        -0.33,
+        0.18,
+        0.32,
+        -0.08
+      ]
+    },
+    {
+      "id": "solar_left",
+      "label": "left solar panel",
+      "appearance": "long thin flat rectangular panel with a shallow raised perimeter frame, mounted along the left edge of the upper deck",
+      "bbox": [
+        -0.235,
+        -0.08,
+        -0.077,
+        -0.1,
+        0.26,
+        -0.048
+      ]
+    },
+    {
+      "id": "solar_right",
+      "label": "right solar panel",
+      "appearance": "long thin flat rectangular panel with a shallow raised perimeter frame, mounted along the right edge of the upper deck",
+      "bbox": [
+        0.1,
+        -0.08,
+        -0.077,
+        0.235,
+        0.26,
+        -0.048
+      ]
+    },
+    {
+      "id": "mast",
+      "label": "rear sensor mast",
+      "appearance": "tall cylindrical vertical shaft with broad ring shaped collars at its lower and upper ends, rising above the rear center of the chassis",
+      "bbox": [
+        -0.04,
+        0.215,
+        -0.08,
+        0.04,
+        0.295,
+        0.35
+      ]
+    },
+    {
+      "id": "camera",
+      "label": "binocular sensor head",
+      "appearance": "wide chamfered rectangular head with two large circular recessed lenses on its front face, mounted horizontally on top of the vertical mast",
+      "bbox": [
+        -0.125,
+        0.18,
+        0.35,
+        0.125,
+        0.3,
+        0.5
+      ]
+    },
+    {
+      "id": "shoulder",
+      "label": "front arm shoulder base",
+      "appearance": "short vertical cylindrical pedestal topped by a thick upright circular hinge housing, positioned at the front center of the rover deck",
+      "bbox": [
+        -0.072,
+        -0.245,
+        -0.1,
+        0.072,
+        -0.135,
+        0.015
+      ]
+    },
+    {
+      "id": "upper_arm",
+      "label": "raised sample arm upper link",
+      "appearance": "long tapered rectangular link with round pivot housings at both ends, sloping upward and forward from the shoulder to a raised elbow",
+      "bbox": [
+        -0.055,
+        -0.4,
+        -0.005,
+        0.055,
+        -0.18,
+        0.18
+      ]
+    },
+    {
+      "id": "forearm",
+      "label": "descending sample arm forearm",
+      "appearance": "slender tapered rectangular link with round joint caps at both ends, sloping downward and forward from the raised elbow to the wrist",
+      "bbox": [
+        -0.047,
+        -0.52,
+        -0.13,
+        0.047,
+        -0.36,
+        0.17
+      ]
+    },
+    {
+      "id": "finger_left",
+      "label": "left gripper finger",
+      "appearance": "curved tapered pincer jaw with a small cylindrical root and narrow inward bent tip, extending forward below the wrist on the left side",
+      "bbox": [
+        -0.072,
+        -0.6,
+        -0.23,
+        -0.014,
+        -0.49,
+        -0.1
+      ]
+    },
+    {
+      "id": "finger_right",
+      "label": "right gripper finger",
+      "appearance": "curved tapered pincer jaw with a small cylindrical root and narrow inward bent tip, extending forward below the wrist on the right side",
+      "bbox": [
+        0.014,
+        -0.6,
+        -0.23,
+        0.072,
+        -0.49,
+        -0.1
+      ]
+    },
+    {
+      "id": "wheel_left_front",
+      "label": "left front wheel",
+      "appearance": "thick upright cylindrical tire with a broad tread ring and recessed circular hub, mounted outboard at the left front suspension end with its axle running left to right",
+      "bbox": [
+        -0.388,
+        -0.365,
+        -0.5,
+        -0.272,
+        -0.15500000000000003,
+        -0.29
+      ]
+    },
+    {
+      "id": "suspension_left_front",
+      "label": "left front suspension arm",
+      "appearance": "short broad bent rectangular beam with thick circular hinge ends, extending laterally and downward from the chassis to the left front wheel",
+      "bbox": [
+        -0.305,
+        -0.3,
+        -0.405,
+        -0.15,
+        -0.21500000000000002,
+        -0.235
+      ]
+    },
+    {
+      "id": "wheel_left_middle",
+      "label": "left middle wheel",
+      "appearance": "thick upright cylindrical tire with a broad tread ring and recessed circular hub, mounted outboard at the left middle suspension end with its axle running left to right",
+      "bbox": [
+        -0.388,
+        -0.07999999999999999,
+        -0.5,
+        -0.272,
+        0.13,
+        -0.29
+      ]
+    },
+    {
+      "id": "suspension_left_middle",
+      "label": "left middle suspension arm",
+      "appearance": "short broad bent rectangular beam with thick circular hinge ends, extending laterally and downward from the chassis to the left middle wheel",
+      "bbox": [
+        -0.305,
+        -0.015,
+        -0.405,
+        -0.15,
+        0.07,
+        -0.235
+      ]
+    },
+    {
+      "id": "wheel_left_rear",
+      "label": "left rear wheel",
+      "appearance": "thick upright cylindrical tire with a broad tread ring and recessed circular hub, mounted outboard at the left rear suspension end with its axle running left to right",
+      "bbox": [
+        -0.388,
+        0.20500000000000002,
+        -0.5,
+        -0.272,
+        0.415,
+        -0.29
+      ]
+    },
+    {
+      "id": "suspension_left_rear",
+      "label": "left rear suspension arm",
+      "appearance": "short broad bent rectangular beam with thick circular hinge ends, extending laterally and downward from the chassis to the left rear wheel",
+      "bbox": [
+        -0.305,
+        0.27,
+        -0.405,
+        -0.15,
+        0.355,
+        -0.235
+      ]
+    },
+    {
+      "id": "wheel_right_front",
+      "label": "right front wheel",
+      "appearance": "thick upright cylindrical tire with a broad tread ring and recessed circular hub, mounted outboard at the right front suspension end with its axle running left to right",
+      "bbox": [
+        0.272,
+        -0.365,
+        -0.5,
+        0.388,
+        -0.15500000000000003,
+        -0.29
+      ]
+    },
+    {
+      "id": "suspension_right_front",
+      "label": "right front suspension arm",
+      "appearance": "short broad bent rectangular beam with thick circular hinge ends, extending laterally and downward from the chassis to the right front wheel",
+      "bbox": [
+        0.15,
+        -0.3,
+        -0.405,
+        0.305,
+        -0.21500000000000002,
+        -0.235
+      ]
+    },
+    {
+      "id": "wheel_right_middle",
+      "label": "right middle wheel",
+      "appearance": "thick upright cylindrical tire with a broad tread ring and recessed circular hub, mounted outboard at the right middle suspension end with its axle running left to right",
+      "bbox": [
+        0.272,
+        -0.07999999999999999,
+        -0.5,
+        0.388,
+        0.13,
+        -0.29
+      ]
+    },
+    {
+      "id": "suspension_right_middle",
+      "label": "right middle suspension arm",
+      "appearance": "short broad bent rectangular beam with thick circular hinge ends, extending laterally and downward from the chassis to the right middle wheel",
+      "bbox": [
+        0.15,
+        -0.015,
+        -0.405,
+        0.305,
+        0.07,
+        -0.235
+      ]
+    },
+    {
+      "id": "wheel_right_rear",
+      "label": "right rear wheel",
+      "appearance": "thick upright cylindrical tire with a broad tread ring and recessed circular hub, mounted outboard at the right rear suspension end with its axle running left to right",
+      "bbox": [
+        0.272,
+        0.20500000000000002,
+        -0.5,
+        0.388,
+        0.415,
+        -0.29
+      ]
+    },
+    {
+      "id": "suspension_right_rear",
+      "label": "right rear suspension arm",
+      "appearance": "short broad bent rectangular beam with thick circular hinge ends, extending laterally and downward from the chassis to the right rear wheel",
+      "bbox": [
+        0.15,
+        0.27,
+        -0.405,
+        0.305,
+        0.355,
+        -0.235
+      ]
+    }
+  ],
+  "rotation_index": 0,
+  "object_num_vertices": 4000,
+  "seed": 43,
+  "explode": 0,
+  "return_glb": false,
+  "object_description": "Agent-designed six-wheel rover with sensor mast, two-link sample arm and gripper; 22 semantic parts."
+}

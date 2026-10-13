@@ -1,0 +1,264 @@
+[
+  {
+    "id": "224b2e1336b641d4b8f3414260dc5522-ck16000_30w72",
+    "title": "Kitchen faucet",
+    "source_id": "224b2e1336b641d4b8f3414260dc5522",
+    "method": "ck16000_30w72",
+    "dataset": "physx-bench",
+    "vertices": 4756,
+    "faces": 9782,
+    "parts": 4,
+    "joints": 1,
+    "camera": [
+      85,
+      55,
+      110
+    ]
+  },
+  {
+    "id": "28dbc43651294813b7ec16f88a4a2628-ck16000_30w72",
+    "title": "Wasp drone",
+    "source_id": "28dbc43651294813b7ec16f88a4a2628",
+    "method": "ck16000_30w72",
+    "dataset": "physx-bench",
+    "vertices": 6307,
+    "faces": 11932,
+    "parts": 8,
+    "joints": 3,
+    "camera": [
+      85,
+      55,
+      110
+    ]
+  },
+  {
+    "id": "297bc9310ed046708ee071f9f4e10ac0-ck16000_30w72",
+    "title": "Woven basket",
+    "source_id": "297bc9310ed046708ee071f9f4e10ac0",
+    "method": "ck16000_30w72",
+    "dataset": "physx-bench",
+    "vertices": 4800,
+    "faces": 9596,
+    "parts": 3,
+    "joints": 2,
+    "camera": [
+      85,
+      55,
+      110
+    ]
+  },
+  {
+    "id": "437c6e56d01c472e8d676e6a68ec3db9-ck8000_physx24",
+    "title": "Pet carrier",
+    "source_id": "437c6e56d01c472e8d676e6a68ec3db9",
+    "method": "ck8000_physx24",
+    "dataset": "physx-bench",
+    "vertices": 4685,
+    "faces": 9323,
+    "parts": 3,
+    "joints": 2,
+    "camera": [
+      110,
+      70,
+      145
+    ]
+  },
+  {
+    "id": "5cd3ea8eb94c4f5597cc086b2df40e58-ck16000_30w72",
+    "title": "Hummer H2",
+    "source_id": "5cd3ea8eb94c4f5597cc086b2df40e58",
+    "method": "ck16000_30w72",
+    "dataset": "physx-bench",
+    "vertices": 5442,
+    "faces": 9306,
+    "parts": 6,
+    "joints": 4,
+    "camera": [
+      85,
+      55,
+      110
+    ]
+  },
+  {
+    "id": "4ccfa4b5c0064fbeae7b802ef789faf9-ck16000_30w72",
+    "title": "Skateboard",
+    "source_id": "4ccfa4b5c0064fbeae7b802ef789faf9",
+    "method": "ck16000_30w72",
+    "dataset": "physx-bench",
+    "vertices": 4603,
+    "faces": 8799,
+    "parts": 7,
+    "joints": 4,
+    "camera": [
+      85,
+      55,
+      110
+    ]
+  },
+  {
+    "id": "45179aa65dfa4e3983f34bd403c9b528-ck16000_30w72",
+    "title": "Sports sunglasses",
+    "source_id": "45179aa65dfa4e3983f34bd403c9b528",
+    "method": "ck16000_30w72",
+    "dataset": "physx-bench",
+    "vertices": 4851,
+    "faces": 9685,
+    "parts": 5,
+    "joints": 2,
+    "camera": [
+      85,
+      55,
+      110
+    ]
+  },
+  {
+    "id": "628be966e8d34542b774fc85496970fc-ck16000_30w72",
+    "title": "Toilet with seat",
+    "source_id": "628be966e8d34542b774fc85496970fc",
+    "method": "ck16000_30w72",
+    "dataset": "physx-bench",
+    "vertices": 4746,
+    "faces": 9384,
+    "parts": 4,
+    "joints": 1,
+    "camera": [
+      85,
+      55,
+      110
+    ]
+  },
+  {
+    "id": "67e70e183487464cbeacbdf25c34ba46-ck16000_30w72",
+    "title": "Faucet assembly",
+    "source_id": "67e70e183487464cbeacbdf25c34ba46",
+    "method": "ck16000_30w72",
+    "dataset": "physx-bench",
+    "vertices": 4481,
+    "faces": 8905,
+    "parts": 4,
+    "joints": 1,
+    "camera": [
+      -85,
+      55,
+      110
+    ]
+  },
+  {
+    "id": "750bbcee3acb42978b1ecb3f60653efc-ck16000_30w72",
+    "title": "MK2 grenade",
+    "source_id": "750bbcee3acb42978b1ecb3f60653efc",
+    "method": "ck16000_30w72",
+    "dataset": "physx-bench",
+    "vertices": 4103,
+    "faces": 8131,
+    "parts": 4,
+    "joints": 2,
+    "camera": [
+      85,
+      55,
+      110
+    ]
+  },
+  {
+    "id": "pm-41086-revised_near_ck8000",
+    "title": "Cabinet 41086",
+    "source_id": "physx_mobility/41086",
+    "dataset": "partnet-mobility",
+    "method": "revised_near_ck8000",
+    "generator": "smart24",
+    "parts": 2,
+    "vertices": 4295,
+    "faces": 8407,
+    "joints": 1,
+    "camera": [
+      100,
+      70,
+      175
+    ]
+  },
+  {
+    "id": "pm-45135-revised_near_ck8000",
+    "title": "Cabinet 45135",
+    "source_id": "physx_mobility/45135",
+    "dataset": "partnet-mobility",
+    "method": "revised_near_ck8000",
+    "generator": "smart24",
+    "parts": 11,
+    "vertices": 4496,
+    "faces": 8809,
+    "joints": 3,
+    "camera": [
+      100,
+      70,
+      175
+    ]
+  },
+  {
+    "id": "pm-45162-exp8_no_near_ck8000",
+    "title": "Cabinet 45162",
+    "source_id": "physx_mobility/45162",
+    "dataset": "partnet-mobility",
+    "method": "exp8_no_near_ck8000",
+    "generator": "smart24",
+    "parts": 5,
+    "vertices": 4414,
+    "faces": 8565,
+    "joints": 2,
+    "camera": [
+      100,
+      70,
+      175
+    ]
+  },
+  {
+    "id": "pm-45219-exp8_no_near_ck8000",
+    "title": "Cabinet 45219",
+    "source_id": "physx_mobility/45219",
+    "dataset": "partnet-mobility",
+    "method": "exp8_no_near_ck8000",
+    "generator": "smart24",
+    "parts": 7,
+    "vertices": 4163,
+    "faces": 7951,
+    "joints": 4,
+    "camera": [
+      100,
+      70,
+      175
+    ]
+  },
+  {
+    "id": "pm-45235-revised_near_ck8000",
+    "title": "Cabinet 45235",
+    "source_id": "physx_mobility/45235",
+    "dataset": "partnet-mobility",
+    "method": "revised_near_ck8000",
+    "generator": "smart24",
+    "parts": 5,
+    "vertices": 4578,
+    "faces": 8997,
+    "joints": 2,
+    "camera": [
+      100,
+      70,
+      175
+    ]
+  },
+  {
+    "id": "pm-45575-exp8_no_near_ck8000",
+    "title": "Cabinet 45575",
+    "source_id": "physx_mobility/45575",
+    "dataset": "partnet-mobility",
+    "method": "exp8_no_near_ck8000",
+    "generator": "smart24",
+    "parts": 8,
+    "vertices": 4217,
+    "faces": 8120,
+    "joints": 2,
+    "camera": [
+      100,
+      70,
+      175
+    ]
+  }
+]

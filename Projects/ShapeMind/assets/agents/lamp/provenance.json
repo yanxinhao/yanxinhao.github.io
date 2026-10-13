@@ -1,0 +1,92 @@
+{
+  "model": "ft-tristream-30w S1/S2 step-100000 EMA",
+  "request_id": "20261008T110504Z_homepage_pivot_task_lamp_2d543f42",
+  "frame": "gltf_yup",
+  "elapsed_s": 247.1,
+  "exported_parts": 5,
+  "requested_parts": 5,
+  "total_vertices": 2543,
+  "total_faces": 5061,
+  "parts": [
+    {
+      "index": 0,
+      "id": "base",
+      "label": "lower circular base",
+      "vertices": 370,
+      "faces": 736,
+      "exported": true,
+      "node": "base__lower_circular_base",
+      "color_rgba": [
+        237,
+        42,
+        42,
+        255
+      ],
+      "color_hex": "#ED2A2A"
+    },
+    {
+      "index": 1,
+      "id": "stem",
+      "label": "left upright stem",
+      "vertices": 176,
+      "faces": 343,
+      "exported": true,
+      "node": "stem__left_upright_stem",
+      "color_rgba": [
+        161,
+        198,
+        16,
+        255
+      ],
+      "color_hex": "#A1C610"
+    },
+    {
+      "index": 2,
+      "id": "hinge",
+      "label": "upper circular hinge",
+      "vertices": 648,
+      "faces": 1292,
+      "exported": true,
+      "node": "hinge__upper_circular_hinge",
+      "color_rgba": [
+        42,
+        237,
+        120,
+        255
+      ],
+      "color_hex": "#2AED78"
+    },
+    {
+      "index": 3,
+      "id": "arm",
+      "label": "upper right inclined arm",
+      "vertices": 192,
+      "faces": 380,
+      "exported": true,
+      "node": "arm__upper_right_inclined_arm",
+      "color_rgba": [
+        16,
+        88,
+        198,
+        255
+      ],
+      "color_hex": "#1058C6"
+    },
+    {
+      "index": 4,
+      "id": "shade",
+      "label": "upper right conical lampshade",
+      "vertices": 1157,
+      "faces": 2310,
+      "exported": true,
+      "node": "shade__upper_right_conical_lampshade",
+      "color_rgba": [
+        198,
+        42,
+        237,
+        255
+      ],
+      "color_hex": "#C62AED"
+    }
+  ]
+}

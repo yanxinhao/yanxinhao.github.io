@@ -1,0 +1,138 @@
+{
+  "frame": "normalized_zup",
+  "provenance": "agent-authored articulation plan",
+  "angle_unit": "degree",
+  "slide_unit": "normalized",
+  "joints": [
+    {
+      "id": "base",
+      "parent": null,
+      "type": "fixed",
+      "parts": [
+        "left_track",
+        "right_track",
+        "undercarriage"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0,
+        0.14,
+        -0.24
+      ],
+      "range": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "slew",
+      "parent": "base",
+      "type": "revolute",
+      "parts": [
+        "upper_platform",
+        "cabin",
+        "counterweight"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0,
+        0.15,
+        -0.225
+      ],
+      "range": [
+        -12,
+        12
+      ]
+    },
+    {
+      "id": "shoulder",
+      "parent": "slew",
+      "type": "revolute",
+      "parts": [
+        "boom"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.095,
+        0.015,
+        -0.135
+      ],
+      "range": [
+        -5,
+        2
+      ]
+    },
+    {
+      "id": "elbow",
+      "parent": "shoulder",
+      "type": "revolute",
+      "parts": [
+        "stick"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.095,
+        -0.355,
+        0.295
+      ],
+      "range": [
+        -6,
+        6
+      ]
+    },
+    {
+      "id": "bucket_pitch",
+      "parent": "elbow",
+      "type": "revolute",
+      "parts": [
+        "bucket",
+        "left_tooth",
+        "middle_tooth",
+        "right_tooth"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.095,
+        -0.415,
+        -0.17
+      ],
+      "range": [
+        -10,
+        8
+      ]
+    }
+  ],
+  "notes": [
+    "Pivots and boxes estimated from one reference view.",
+    "Conservative showcase movement, not learned joint predictions or physical simulation.",
+    "Tracks are fixed; teeth move rigidly with the bucket."
+  ],
+  "verification": {
+    "mesh_checked": true,
+    "normalized_zup_to_gltf_yup": "[x,y,z] -> [2*x,2*z,-2*y]",
+    "scale": 2.0,
+    "pivot_adjustments": [],
+    "reason": "All generated bounds reproduce the planned box extents within about 0.001 normalized units. Rest pose and both conservative motion extremes were rendered and visually checked; boom/stick/bucket remain connected.",
+    "motion_claim": "Kinematic presentation authored by an agent; not model-predicted joint parameters or physics simulation."
+  }
+}

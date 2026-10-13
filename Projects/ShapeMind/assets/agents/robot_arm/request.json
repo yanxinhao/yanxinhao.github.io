@@ -1,0 +1,167 @@
+{
+  "id": "homepage_robot_arm_v2",
+  "rotation_index": 0,
+  "object_num_vertices": 4800,
+  "seed": 42,
+  "explode": 0,
+  "return_glb": false,
+  "object_description": "Industrial manipulator with 12 semantic parts and separately authored yaw, shoulder, elbow, wrist, and gripper joints.",
+  "parts": [
+    {
+      "id": "base",
+      "label": "bottom mounting plate",
+      "appearance": "thick broad square horizontal mounting plate with rounded corners and recessed corner holes, positioned beneath the pedestal",
+      "bbox": [
+        -0.5,
+        -0.22,
+        -0.35,
+        -0.1,
+        0.22,
+        -0.31
+      ]
+    },
+    {
+      "id": "pedestal",
+      "label": "lower upright pedestal",
+      "appearance": "short wide upright cylindrical pedestal with sloping triangular reinforcing ribs around its lower rim, centered on the mounting plate",
+      "bbox": [
+        -0.43,
+        -0.13,
+        -0.32,
+        -0.17,
+        0.13,
+        -0.16
+      ]
+    },
+    {
+      "id": "turret",
+      "label": "lower rotating turret",
+      "appearance": "thick horizontal circular drum with a shallow top flange, placed on the pedestal immediately below the shoulder housing",
+      "bbox": [
+        -0.425,
+        -0.125,
+        -0.18,
+        -0.175,
+        0.125,
+        -0.12
+      ]
+    },
+    {
+      "id": "shoulder",
+      "label": "left shoulder joint",
+      "appearance": "large thick cylindrical hinge drum with a circular front cap and curved support cheeks, mounted above the rotating turret",
+      "bbox": [
+        -0.39,
+        -0.1,
+        -0.14,
+        -0.21,
+        0.1,
+        0.12
+      ]
+    },
+    {
+      "id": "upper_arm",
+      "label": "rising upper arm link",
+      "appearance": "long thick tapered rectangular link with rounded edges and a shallow inset broad side panel, rising diagonally to the right from shoulder to elbow",
+      "bbox": [
+        -0.32,
+        -0.068,
+        0.045,
+        0.105,
+        0.068,
+        0.295
+      ]
+    },
+    {
+      "id": "elbow",
+      "label": "upper elbow joint",
+      "appearance": "large short cylindrical hinge drum with broad circular front cap, positioned at the high bend joining the upper arm and forearm",
+      "bbox": [
+        0.02,
+        -0.085,
+        0.2,
+        0.18,
+        0.085,
+        0.35
+      ]
+    },
+    {
+      "id": "forearm",
+      "label": "descending forearm link",
+      "appearance": "thick elongated tapered box-shaped link with beveled sides and an inset face panel, extending downward and right from the upper elbow to the wrist",
+      "bbox": [
+        0.13,
+        -0.065,
+        0.018,
+        0.365,
+        0.065,
+        0.29
+      ]
+    },
+    {
+      "id": "wrist",
+      "label": "right wrist joint",
+      "appearance": "short thick cylindrical hinge housing with rounded rear casing and a circular front face, joining the descending forearm to the downward tool flange",
+      "bbox": [
+        0.305,
+        -0.07,
+        -0.037,
+        0.425,
+        0.07,
+        0.085
+      ]
+    },
+    {
+      "id": "flange",
+      "label": "lower wrist tool flange",
+      "appearance": "short stepped cylindrical connector descending slightly rightward from the wrist joint into the top of the gripper palm",
+      "bbox": [
+        0.365,
+        -0.055,
+        -0.09,
+        0.443,
+        0.055,
+        -0.015
+      ]
+    },
+    {
+      "id": "palm",
+      "label": "rectangular gripper palm",
+      "appearance": "compact broad rectangular block with beveled corners and a flat front face, spanning above the two separated gripper fingers",
+      "bbox": [
+        0.357,
+        -0.065,
+        -0.15,
+        0.493,
+        0.065,
+        -0.072
+      ]
+    },
+    {
+      "id": "jaw_left",
+      "label": "left gripper finger",
+      "appearance": "thick narrow L-shaped articulated finger descending from the left end of the palm, with an inward projecting lower pad facing the other finger",
+      "bbox": [
+        0.352,
+        -0.05,
+        -0.28,
+        0.405,
+        0.05,
+        -0.14
+      ]
+    },
+    {
+      "id": "jaw_right",
+      "label": "right gripper finger",
+      "appearance": "thick narrow L-shaped articulated finger descending from the right end of the palm, with an inward projecting lower pad mirroring the left finger",
+      "bbox": [
+        0.451,
+        -0.05,
+        -0.275,
+        0.5,
+        0.05,
+        -0.135
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "shapemind_agent_cart_20261008",
+  "rotation_index": 0,
+  "object_num_vertices": 2400,
+  "seed": 42,
+  "explode": 0,
+  "return_glb": false,
+  "object_description": "Agent-designed two-tier serving trolley with 11 semantic parts; boxes estimated from a generated transparent reference.",
+  "parts": [
+    {
+      "id": "upper_tray",
+      "label": "upper rectangular tray",
+      "appearance": "broad shallow rectangular basin with rounded corners, a flat horizontal bottom and low raised rim along all four edges, mounted at the top of the four posts",
+      "bbox": [
+        -0.49,
+        -0.25,
+        0.18,
+        0.49,
+        0.25,
+        0.27
+      ]
+    },
+    {
+      "id": "lower_tray",
+      "label": "lower rectangular tray",
+      "appearance": "broad shallow rectangular basin with rounded corners and a low raised perimeter rim, positioned horizontally near the bottom beneath the upper tray",
+      "bbox": [
+        -0.49,
+        -0.25,
+        -0.31,
+        0.49,
+        0.25,
+        -0.23
+      ]
+    },
+    {
+      "id": "post_front_left",
+      "label": "front left corner post",
+      "appearance": "straight slender cylindrical vertical shaft with circular cross-section, connecting the lower and upper trays at the front left corner and extending slightly below the lower tray",
+      "bbox": [
+        -0.49200000000000005,
+        -0.262,
+        -0.36,
+        -0.438,
+        -0.208,
+        0.275
+      ]
+    },
+    {
+      "id": "post_rear_left",
+      "label": "rear left corner post",
+      "appearance": "straight slender cylindrical vertical shaft with circular cross-section, connecting the lower and upper trays at the rear left corner and extending slightly below the lower tray",
+      "bbox": [
+        -0.49200000000000005,
+        0.208,
+        -0.36,
+        -0.438,
+        0.262,
+        0.275
+      ]
+    },
+    {
+      "id": "post_front_right",
+      "label": "front right corner post",
+      "appearance": "straight slender cylindrical vertical shaft with circular cross-section, connecting the lower and upper trays at the front right corner and extending slightly below the lower tray",
+      "bbox": [
+        0.438,
+        -0.262,
+        -0.36,
+        0.49200000000000005,
+        -0.208,
+        0.275
+      ]
+    },
+    {
+      "id": "post_rear_right",
+      "label": "rear right corner post",
+      "appearance": "straight slender cylindrical vertical shaft with circular cross-section, connecting the lower and upper trays at the rear right corner and extending slightly below the lower tray",
+      "bbox": [
+        0.438,
+        0.208,
+        -0.36,
+        0.49200000000000005,
+        0.262,
+        0.275
+      ]
+    },
+    {
+      "id": "wheel_front_left",
+      "label": "front left caster wheel",
+      "appearance": "thick round vertical disk with a recessed circular center and short fork-shaped bracket above, mounted below the front left corner post with its axle running front to back",
+      "bbox": [
+        -0.5,
+        -0.27799999999999997,
+        -0.5,
+        -0.38,
+        -0.20199999999999999,
+        -0.34
+      ]
+    },
+    {
+      "id": "wheel_rear_left",
+      "label": "rear left caster wheel",
+      "appearance": "thick round vertical disk with a recessed circular center and short fork-shaped bracket above, mounted below the rear left corner post with its axle running front to back",
+      "bbox": [
+        -0.5,
+        0.20199999999999999,
+        -0.5,
+        -0.38,
+        0.27799999999999997,
+        -0.34
+      ]
+    },
+    {
+      "id": "wheel_front_right",
+      "label": "front right caster wheel",
+      "appearance": "thick round vertical disk with a recessed circular center and short fork-shaped bracket above, mounted below the front right corner post with its axle running front to back",
+      "bbox": [
+        0.38,
+        -0.27799999999999997,
+        -0.5,
+        0.5,
+        -0.20199999999999999,
+        -0.34
+      ]
+    },
+    {
+      "id": "wheel_rear_right",
+      "label": "rear right caster wheel",
+      "appearance": "thick round vertical disk with a recessed circular center and short fork-shaped bracket above, mounted below the rear right corner post with its axle running front to back",
+      "bbox": [
+        0.38,
+        0.20199999999999999,
+        -0.5,
+        0.5,
+        0.27799999999999997,
+        -0.34
+      ]
+    },
+    {
+      "id": "push_handle",
+      "label": "right end push handle",
+      "appearance": "single tall inverted U-shaped round tube with smoothly rounded upper corners, rising from the two right corner posts and bridging front to back above the upper tray",
+      "bbox": [
+        0.437,
+        -0.262,
+        0.265,
+        0.492,
+        0.262,
+        0.5
+      ]
+    }
+  ]
+}

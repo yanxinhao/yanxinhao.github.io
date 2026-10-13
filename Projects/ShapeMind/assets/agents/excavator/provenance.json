@@ -1,0 +1,20 @@
+{
+  "model": "ft-tristream-30w S1/S2 step-100000 EMA",
+  "request_id": "20261008T123516Z_shapemind_agent_v2_excavator_baf13f2b",
+  "frame": "gltf_yup",
+  "elapsed_s": 307.9,
+  "exported_parts": 12,
+  "requested_parts": 12,
+  "total_vertices": 7088,
+  "total_faces": 13611,
+  "rig_source": "agent-authored articulation plan",
+  "display_transform": {
+    "original_glb_center_yup": [
+      -0.0009765625,
+      0.00048828125,
+      0.0
+    ],
+    "uniform_display_scale": 32.01563263312164,
+    "plan_to_glb_scale": 2
+  }
+}

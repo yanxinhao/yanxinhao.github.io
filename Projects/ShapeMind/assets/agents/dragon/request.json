@@ -1,0 +1,284 @@
+{
+  "id": "homepage_mechanical_dragon_v2",
+  "rotation_index": 0,
+  "object_num_vertices": 7600,
+  "seed": 42,
+  "explode": 0,
+  "return_glb": false,
+  "object_description": "Mechanical winged dragon with 21 agent-planned semantic parts; four limbs, two two-section wings, three-section tail, head and jaw.",
+  "parts": [
+    {
+      "id": "torso",
+      "label": "central armored torso",
+      "appearance": "large elongated barrel-shaped body with convex overlapping armor plates, extending horizontally between the four legs",
+      "bbox": [
+        -0.135,
+        -0.16,
+        -0.18,
+        0.135,
+        0.18000000000000002,
+        0.055
+      ]
+    },
+    {
+      "id": "neck",
+      "label": "raised front neck",
+      "appearance": "thick tall curved tapering column of overlapping broad armor plates, rising upward and forward from the front of the torso",
+      "bbox": [
+        -0.08,
+        -0.32,
+        -0.025,
+        0.08,
+        -0.11,
+        0.305
+      ]
+    },
+    {
+      "id": "head",
+      "label": "upper dragon head",
+      "appearance": "elongated angular dragon skull with a tapered snout, raised brow ridges and a broad rounded rear hinge region, projecting forward from the top of the neck",
+      "bbox": [
+        -0.095,
+        -0.48000000000000004,
+        0.235,
+        0.095,
+        -0.26,
+        0.375
+      ]
+    },
+    {
+      "id": "jaw",
+      "label": "lower hinged jaw",
+      "appearance": "long narrow curved lower jaw with tapered front tip and raised tooth-like ridges, set below the snout with a visible open gap",
+      "bbox": [
+        -0.065,
+        -0.47500000000000003,
+        0.175,
+        0.065,
+        -0.275,
+        0.255
+      ]
+    },
+    {
+      "id": "horn_left",
+      "label": "left swept horn",
+      "appearance": "thick tapered backward-swept pointed horn with stepped ring ridges, rising from the left rear upper corner of the skull",
+      "bbox": [
+        -0.11,
+        -0.275,
+        0.315,
+        -0.038,
+        -0.12000000000000001,
+        0.425
+      ]
+    },
+    {
+      "id": "horn_right",
+      "label": "right swept horn",
+      "appearance": "thick tapered backward-swept pointed horn with stepped ring ridges, rising from the right rear upper corner of the skull, mirroring the left horn",
+      "bbox": [
+        0.038,
+        -0.275,
+        0.315,
+        0.11,
+        -0.12000000000000001,
+        0.425
+      ]
+    },
+    {
+      "id": "wing_left_inner",
+      "label": "left inner wing spar",
+      "appearance": "thick curved upright tapered wing spar with prominent circular hinge ends, rising diagonally outward from the left upper shoulder",
+      "bbox": [
+        -0.29,
+        -0.08,
+        0.0,
+        -0.09,
+        0.05499999999999999,
+        0.305
+      ]
+    },
+    {
+      "id": "wing_left_outer",
+      "label": "left outer wing panel",
+      "appearance": "large broad thin angular batlike wing panel with a scalloped lower edge and three raised curved ribs, extending outward and backward from the left inner wing elbow",
+      "bbox": [
+        -0.5,
+        -0.03,
+        0.015,
+        -0.23,
+        0.27999999999999997,
+        0.425
+      ]
+    },
+    {
+      "id": "wing_right_inner",
+      "label": "right inner wing spar",
+      "appearance": "thick curved upright tapered wing spar with prominent circular hinge ends, rising diagonally outward from the right upper shoulder, mirroring the left spar",
+      "bbox": [
+        0.09,
+        -0.08,
+        0.0,
+        0.29,
+        0.05499999999999999,
+        0.305
+      ]
+    },
+    {
+      "id": "wing_right_outer",
+      "label": "right outer wing panel",
+      "appearance": "large broad thin angular batlike wing panel with a scalloped lower edge and three raised curved ribs, extending outward and backward from the right inner wing elbow",
+      "bbox": [
+        0.23,
+        -0.03,
+        0.015,
+        0.5,
+        0.27999999999999997,
+        0.425
+      ]
+    },
+    {
+      "id": "tail_root",
+      "label": "first armored tail segment",
+      "appearance": "thick tapered curved cylindrical armor segment projecting backward from the rump, with a broad circular joint at its root",
+      "bbox": [
+        -0.072,
+        0.15000000000000002,
+        -0.17,
+        0.075,
+        0.31,
+        -0.04
+      ]
+    },
+    {
+      "id": "tail_middle",
+      "label": "middle armored tail segment",
+      "appearance": "elongated curved tapering cylindrical armor segment extending backward and slightly rightward from the thick root tail segment",
+      "bbox": [
+        0.01,
+        0.27999999999999997,
+        -0.145,
+        0.125,
+        0.425,
+        -0.025
+      ]
+    },
+    {
+      "id": "tail_tip",
+      "label": "upturned pointed tail segment",
+      "appearance": "long slender curved conical tail segment tapering to a sharp upward-pointing tip, attached to the middle tail segment",
+      "bbox": [
+        0.08,
+        0.39999999999999997,
+        -0.075,
+        0.175,
+        0.48,
+        0.13
+      ]
+    },
+    {
+      "id": "leg_front_left_upper",
+      "label": "front left upper leg",
+      "appearance": "thick convex armored upper limb with a rounded shoulder housing and narrowing knee end, descending outward from the front left torso",
+      "bbox": [
+        -0.21,
+        -0.19,
+        -0.275,
+        -0.095,
+        -0.075,
+        -0.075
+      ]
+    },
+    {
+      "id": "leg_front_left_lower",
+      "label": "front left lower leg and clawed foot",
+      "appearance": "bent tapered armored shin ending in a broad splayed three-claw foot, extending downward and forward from the front left knee",
+      "bbox": [
+        -0.25,
+        -0.305,
+        -0.425,
+        -0.115,
+        -0.125,
+        -0.245
+      ]
+    },
+    {
+      "id": "leg_front_right_upper",
+      "label": "front right upper leg",
+      "appearance": "thick convex armored upper limb with a rounded shoulder housing and narrowing knee end, descending outward from the front right torso",
+      "bbox": [
+        0.095,
+        -0.19,
+        -0.275,
+        0.21,
+        -0.075,
+        -0.075
+      ]
+    },
+    {
+      "id": "leg_front_right_lower",
+      "label": "front right lower leg and clawed foot",
+      "appearance": "bent tapered armored shin ending in a broad splayed three-claw foot, extending downward and forward from the front right knee",
+      "bbox": [
+        0.115,
+        -0.305,
+        -0.425,
+        0.25,
+        -0.125,
+        -0.245
+      ]
+    },
+    {
+      "id": "leg_rear_left_upper",
+      "label": "rear left upper leg",
+      "appearance": "thick rounded armored thigh with a broad hip hinge and tapered knee end, descending outward from the rear left side of the torso",
+      "bbox": [
+        -0.205,
+        0.065,
+        -0.28,
+        -0.085,
+        0.2,
+        -0.1
+      ]
+    },
+    {
+      "id": "leg_rear_left_lower",
+      "label": "rear left lower leg and clawed foot",
+      "appearance": "bent tapered armored shin ending in a broad splayed three-claw foot, extending downward from the rear left knee",
+      "bbox": [
+        -0.25,
+        0.06,
+        -0.425,
+        -0.11,
+        0.255,
+        -0.25
+      ]
+    },
+    {
+      "id": "leg_rear_right_upper",
+      "label": "rear right upper leg",
+      "appearance": "thick rounded armored thigh with a broad hip hinge and tapered knee end, descending outward from the rear right side of the torso",
+      "bbox": [
+        0.085,
+        0.065,
+        -0.28,
+        0.205,
+        0.2,
+        -0.1
+      ]
+    },
+    {
+      "id": "leg_rear_right_lower",
+      "label": "rear right lower leg and clawed foot",
+      "appearance": "bent tapered armored shin ending in a broad splayed three-claw foot, extending downward from the rear right knee",
+      "bbox": [
+        0.11,
+        0.06,
+        -0.425,
+        0.25,
+        0.255,
+        -0.25
+      ]
+    }
+  ]
+}

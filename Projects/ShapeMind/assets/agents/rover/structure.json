@@ -1,0 +1,427 @@
+{
+  "object": {
+    "name": "Exploration Rover"
+  },
+  "parts": [
+    {
+      "id": "body",
+      "name": "central rover chassis and raised deck"
+    },
+    {
+      "id": "solar_left",
+      "name": "left solar panel"
+    },
+    {
+      "id": "solar_right",
+      "name": "right solar panel"
+    },
+    {
+      "id": "mast",
+      "name": "rear sensor mast"
+    },
+    {
+      "id": "camera",
+      "name": "binocular sensor head"
+    },
+    {
+      "id": "shoulder",
+      "name": "front arm shoulder base"
+    },
+    {
+      "id": "upper_arm",
+      "name": "raised sample arm upper link"
+    },
+    {
+      "id": "forearm",
+      "name": "descending sample arm forearm"
+    },
+    {
+      "id": "finger_left",
+      "name": "left gripper finger"
+    },
+    {
+      "id": "finger_right",
+      "name": "right gripper finger"
+    },
+    {
+      "id": "wheel_left_front",
+      "name": "left front wheel"
+    },
+    {
+      "id": "suspension_left_front",
+      "name": "left front suspension arm"
+    },
+    {
+      "id": "wheel_left_middle",
+      "name": "left middle wheel"
+    },
+    {
+      "id": "suspension_left_middle",
+      "name": "left middle suspension arm"
+    },
+    {
+      "id": "wheel_left_rear",
+      "name": "left rear wheel"
+    },
+    {
+      "id": "suspension_left_rear",
+      "name": "left rear suspension arm"
+    },
+    {
+      "id": "wheel_right_front",
+      "name": "right front wheel"
+    },
+    {
+      "id": "suspension_right_front",
+      "name": "right front suspension arm"
+    },
+    {
+      "id": "wheel_right_middle",
+      "name": "right middle wheel"
+    },
+    {
+      "id": "suspension_right_middle",
+      "name": "right middle suspension arm"
+    },
+    {
+      "id": "wheel_right_rear",
+      "name": "right rear wheel"
+    },
+    {
+      "id": "suspension_right_rear",
+      "name": "right rear suspension arm"
+    }
+  ],
+  "provenance": "Agent-authored articulation, attached to actual Semantic PartGen meshes; not inferred by the mesh generator.",
+  "articulation": [
+    {
+      "group_id": "chassis",
+      "parent_group": null,
+      "part_ids": [
+        "body",
+        "solar_left",
+        "solar_right",
+        "suspension_left_front",
+        "suspension_left_middle",
+        "suspension_left_rear",
+        "suspension_right_front",
+        "suspension_right_middle",
+        "suspension_right_rear"
+      ],
+      "type": "fixed",
+      "params": {}
+    },
+    {
+      "group_id": "wheel_left_front",
+      "parent_group": "chassis",
+      "part_ids": [
+        "wheel_left_front"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          10.427182538348802,
+          17.540043615046407,
+          6.222057254518809
+        ],
+        "rotate_range": [
+          0,
+          360
+        ]
+      }
+    },
+    {
+      "group_id": "wheel_left_middle",
+      "parent_group": "chassis",
+      "part_ids": [
+        "wheel_left_middle"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          10.427182538348802,
+          35.79894309330728,
+          6.222057254518809
+        ],
+        "rotate_range": [
+          0,
+          360
+        ]
+      }
+    },
+    {
+      "group_id": "wheel_left_rear",
+      "parent_group": "chassis",
+      "part_ids": [
+        "wheel_left_rear"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          10.427182538348802,
+          54.02659531411822,
+          6.222057254518809
+        ],
+        "rotate_range": [
+          0,
+          360
+        ]
+      }
+    },
+    {
+      "group_id": "wheel_right_front",
+      "parent_group": "chassis",
+      "part_ids": [
+        "wheel_right_front"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          52.5728174616512,
+          17.540043615046407,
+          6.222057254518809
+        ],
+        "rotate_range": [
+          0,
+          360
+        ]
+      }
+    },
+    {
+      "group_id": "wheel_right_middle",
+      "parent_group": "chassis",
+      "part_ids": [
+        "wheel_right_middle"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          52.5728174616512,
+          35.79894309330728,
+          6.222057254518809
+        ],
+        "rotate_range": [
+          0,
+          360
+        ]
+      }
+    },
+    {
+      "group_id": "wheel_right_rear",
+      "parent_group": "chassis",
+      "part_ids": [
+        "wheel_right_rear"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          52.5728174616512,
+          54.02659531411822,
+          6.222057254518809
+        ],
+        "rotate_range": [
+          0,
+          360
+        ]
+      }
+    },
+    {
+      "group_id": "mast_pan",
+      "parent_group": "chassis",
+      "part_ids": [
+        "mast"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          0,
+          1
+        ],
+        "rotate_origin": [
+          31.5,
+          50.52491751050317,
+          26.388127968734736
+        ],
+        "rotate_range": [
+          -24,
+          24
+        ]
+      }
+    },
+    {
+      "group_id": "camera_tilt",
+      "parent_group": "mast_pan",
+      "part_ids": [
+        "camera"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          31.468752742550073,
+          50.51710569614069,
+          54.22149447972643
+        ],
+        "rotate_range": [
+          -12,
+          12
+        ]
+      }
+    },
+    {
+      "group_id": "arm_pan",
+      "parent_group": "chassis",
+      "part_ids": [
+        "shoulder"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          0,
+          1
+        ],
+        "rotate_origin": [
+          31.5,
+          22.026650340986812,
+          25.74512600293112
+        ],
+        "rotate_range": [
+          -8,
+          8
+        ]
+      }
+    },
+    {
+      "group_id": "arm_shoulder",
+      "parent_group": "arm_pan",
+      "part_ids": [
+        "upper_arm"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          31.5,
+          21.385697375671718,
+          31.17171170297997
+        ],
+        "rotate_range": [
+          -6,
+          6
+        ]
+      }
+    },
+    {
+      "group_id": "arm_elbow",
+      "parent_group": "arm_shoulder",
+      "part_ids": [
+        "forearm"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          1,
+          0,
+          0
+        ],
+        "rotate_origin": [
+          31.5,
+          10.020788103566193,
+          40.79362590327308
+        ],
+        "rotate_range": [
+          -16,
+          0
+        ]
+      }
+    },
+    {
+      "group_id": "left_pincer",
+      "parent_group": "arm_elbow",
+      "part_ids": [
+        "finger_left"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          0,
+          1
+        ],
+        "rotate_origin": [
+          29.90927127699072,
+          5.40061215828041,
+          23.50089418661456
+        ],
+        "rotate_range": [
+          -12,
+          0
+        ]
+      }
+    },
+    {
+      "group_id": "right_pincer",
+      "parent_group": "arm_elbow",
+      "part_ids": [
+        "finger_right"
+      ],
+      "type": "revolute",
+      "params": {
+        "rotate_axis": [
+          0,
+          0,
+          1
+        ],
+        "rotate_origin": [
+          33.090728723009285,
+          5.40061215828041,
+          23.50089418661456
+        ],
+        "rotate_range": [
+          0,
+          12
+        ]
+      }
+    }
+  ]
+}

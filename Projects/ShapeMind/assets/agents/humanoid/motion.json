@@ -1,0 +1,266 @@
+{
+  "frame": "normalized_zup",
+  "provenance": "agent-authored articulation plan",
+  "angle_unit": "degree",
+  "slide_unit": "normalized",
+  "joints": [
+    {
+      "id": "body",
+      "parent": null,
+      "type": "fixed",
+      "parts": [
+        "torso",
+        "waist",
+        "pelvis",
+        "neck"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0.1
+      ],
+      "range": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "head_yaw",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "head"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0,
+        0,
+        0.366
+      ],
+      "range": [
+        -15,
+        15
+      ]
+    },
+    {
+      "id": "left_shoulder_abduction",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "left_shoulder",
+        "left_upperarm"
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "pivot": [
+        -0.132,
+        0.008,
+        0.283
+      ],
+      "range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "left_elbow_pitch",
+      "parent": "left_shoulder_abduction",
+      "type": "revolute",
+      "parts": [
+        "left_elbow",
+        "left_forearm",
+        "left_hand"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.17,
+        0.007,
+        0.15
+      ],
+      "range": [
+        -18,
+        0
+      ]
+    },
+    {
+      "id": "left_hip_pitch",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "left_thigh"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.071,
+        0.006,
+        0.057
+      ],
+      "range": [
+        -3,
+        3
+      ]
+    },
+    {
+      "id": "left_knee_pitch",
+      "parent": "left_hip_pitch",
+      "type": "revolute",
+      "parts": [
+        "left_knee",
+        "left_shin",
+        "left_foot"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.073,
+        -0.001,
+        -0.167
+      ],
+      "range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "right_shoulder_abduction",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "right_shoulder",
+        "right_upperarm"
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "pivot": [
+        0.132,
+        0.008,
+        0.283
+      ],
+      "range": [
+        -12,
+        0
+      ]
+    },
+    {
+      "id": "right_elbow_pitch",
+      "parent": "right_shoulder_abduction",
+      "type": "revolute",
+      "parts": [
+        "right_elbow",
+        "right_forearm",
+        "right_hand"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.17,
+        0.007,
+        0.15
+      ],
+      "range": [
+        -18,
+        0
+      ]
+    },
+    {
+      "id": "right_hip_pitch",
+      "parent": "body",
+      "type": "revolute",
+      "parts": [
+        "right_thigh"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.071,
+        0.006,
+        0.057
+      ],
+      "range": [
+        -3,
+        3
+      ]
+    },
+    {
+      "id": "right_knee_pitch",
+      "parent": "right_hip_pitch",
+      "type": "revolute",
+      "parts": [
+        "right_knee",
+        "right_shin",
+        "right_foot"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.073,
+        -0.001,
+        -0.167
+      ],
+      "range": [
+        0,
+        6
+      ]
+    }
+  ],
+  "notes": [
+    "Nine conservative revolute joints and a fixed torso root.",
+    "Feet move with shins; this is a kinematic articulation showcase, not a ground-contact walking simulation.",
+    "Hip sockets are merged into thigh geometry; ankle hubs and fingers remain integrated into feet and hands.",
+    "Pivots are estimated from a single neutral-pose reference and should be checked against the generated mesh."
+  ],
+  "verification": {
+    "mesh_checked": true,
+    "normalized_zup_to_gltf_yup": "[x,y,z] -> [2*x,2*z,-2*y]",
+    "scale": 2.0,
+    "pivot_adjustments": [],
+    "motion_adjustments": [
+      {
+        "joints": [
+          "left_shoulder_abduction",
+          "right_shoulder_abduction"
+        ],
+        "change": "Shoulder motion changed from X-axis pitch to Y-axis abduction with mirrored 12-degree conservative ranges.",
+        "reason": "Generated shoulder hubs are rounded and remain connected; sideward movement reads more clearly from the nearly frontal webpage camera.",
+        "initial_plan": "motion_initial.json"
+      }
+    ],
+    "motion_claim": "Kinematic presentation authored by an agent; not model-predicted joint parameters or physics simulation.",
+    "reason": "All 23 generated part bounds match request boxes within 0.000862 normalized units. Original pivots retained after visual checks of rest pose and both final motion extremes; all limb joints remain visually connected."
+  }
+}

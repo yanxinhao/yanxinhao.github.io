@@ -1,0 +1,326 @@
+{
+  "frame": "normalized_zup",
+  "provenance": "agent-authored articulation plan",
+  "angle_units": "degrees",
+  "translation_units": "normalized",
+  "joints": [
+    {
+      "id": "chassis",
+      "parent": null,
+      "type": "fixed",
+      "parts": [
+        "body",
+        "solar_left",
+        "solar_right",
+        "suspension_left_front",
+        "suspension_left_middle",
+        "suspension_left_rear",
+        "suspension_right_front",
+        "suspension_right_middle",
+        "suspension_right_rear"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        -0.000244,
+        0.000153,
+        0.000166
+      ],
+      "range": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "wheel_left_front",
+      "parent": "chassis",
+      "type": "revolute",
+      "parts": [
+        "wheel_left_front"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.329102,
+        -0.26001,
+        -0.394775
+      ],
+      "range": [
+        0,
+        360
+      ]
+    },
+    {
+      "id": "wheel_left_middle",
+      "parent": "chassis",
+      "type": "revolute",
+      "parts": [
+        "wheel_left_middle"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.329102,
+        0.025146,
+        -0.394775
+      ],
+      "range": [
+        0,
+        360
+      ]
+    },
+    {
+      "id": "wheel_left_rear",
+      "parent": "chassis",
+      "type": "revolute",
+      "parts": [
+        "wheel_left_rear"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.329102,
+        0.309814,
+        -0.394775
+      ],
+      "range": [
+        0,
+        360
+      ]
+    },
+    {
+      "id": "wheel_right_front",
+      "parent": "chassis",
+      "type": "revolute",
+      "parts": [
+        "wheel_right_front"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.329102,
+        -0.26001,
+        -0.394775
+      ],
+      "range": [
+        0,
+        360
+      ]
+    },
+    {
+      "id": "wheel_right_middle",
+      "parent": "chassis",
+      "type": "revolute",
+      "parts": [
+        "wheel_right_middle"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.329102,
+        0.025146,
+        -0.394775
+      ],
+      "range": [
+        0,
+        360
+      ]
+    },
+    {
+      "id": "wheel_right_rear",
+      "parent": "chassis",
+      "type": "revolute",
+      "parts": [
+        "wheel_right_rear"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.329102,
+        0.309814,
+        -0.394775
+      ],
+      "range": [
+        0,
+        360
+      ]
+    },
+    {
+      "id": "mast_pan",
+      "parent": "chassis",
+      "type": "revolute",
+      "parts": [
+        "mast"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0.0,
+        0.255127,
+        -0.079834
+      ],
+      "range": [
+        -24,
+        24
+      ]
+    },
+    {
+      "id": "camera_tilt",
+      "parent": "mast_pan",
+      "type": "revolute",
+      "parts": [
+        "camera"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        -0.000488,
+        0.255005,
+        0.35485
+      ],
+      "range": [
+        -12,
+        12
+      ]
+    },
+    {
+      "id": "arm_pan",
+      "parent": "chassis",
+      "type": "revolute",
+      "parts": [
+        "shoulder"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0.0,
+        -0.189941,
+        -0.089876
+      ],
+      "range": [
+        -8,
+        8
+      ]
+    },
+    {
+      "id": "arm_shoulder",
+      "parent": "arm_pan",
+      "type": "revolute",
+      "parts": [
+        "upper_arm"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.0,
+        -0.199951,
+        -0.005127
+      ],
+      "range": [
+        -6,
+        6
+      ]
+    },
+    {
+      "id": "arm_elbow",
+      "parent": "arm_shoulder",
+      "type": "revolute",
+      "parts": [
+        "forearm"
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "pivot": [
+        0.0,
+        -0.377441,
+        0.145142
+      ],
+      "range": [
+        -16,
+        0
+      ]
+    },
+    {
+      "id": "left_pincer",
+      "parent": "arm_elbow",
+      "type": "revolute",
+      "parts": [
+        "finger_left"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        -0.024843,
+        -0.449596,
+        -0.124925
+      ],
+      "range": [
+        -12,
+        0
+      ]
+    },
+    {
+      "id": "right_pincer",
+      "parent": "arm_elbow",
+      "type": "revolute",
+      "parts": [
+        "finger_right"
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "pivot": [
+        0.024843,
+        -0.449596,
+        -0.124925
+      ],
+      "range": [
+        0,
+        12
+      ]
+    }
+  ],
+  "alignment": "Pivots checked against actual generated mesh AABBs in normalized Z-up. See rig_alignment.json and actual_bounds.json. Render conversion to raw GLB is (2*x, 2*z, -2*y); rotation axes use (x,z,-y) without scale.",
+  "visual_review": "Reviewed neutral and quarter-cycle renders. Elbow motion restricted to outward extension [-16,0] degrees and shoulder amplitude reduced to 6 degrees to keep the pincer away from the chassis; generated geometry unmodified."
+}
